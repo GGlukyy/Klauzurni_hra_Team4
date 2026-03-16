@@ -1,51 +1,41 @@
 using UnityEngine;
+using System.Collections;
 
-public class door : MonoBehaviour
+public class Door : MonoBehaviour
 {
-    public float smooth = 3f;
-    public float DoorOpenAngle = 90f;
+    public bool isOpen = false;
+    public float doorOpenAngle = 90f;
+    public float openSpeed = 2f;
 
-    private bool open = false;
-    private bool enter = false;
+    private Vector3 defaultRotation;
+    private Vector3 openRotation;
+    private Coroutine animationCoroutine;
 
-    private Quaternion defaultRot;
-    private Quaternion openRot;
-
-    void Start()
+    private void Start()
     {
-        // Uložení výchozí a cílové rotace
-        defaultRot = transform.localRotation;
-        openRot = Quaternion.Euler(defaultRot.eulerAngles + new Vector3(0, DoorOpenAngle, 0));
+        defaultRotation = transform.eulerAngles;
+        openRotation = new Vector3(defaultRotation.x, defaultRotation.y + doorOpenAngle, defaultRotation.z);
     }
 
-    void Update()
+    public void ToggleDoor()
     {
-        // Kontrola stisknutí klávesy F, POUZE pokud je hráč v Trigger zóně
-        if (enter && Input.GetKeyDown(KeyCode.F))
-        {
-            open = !open;
-        }
-
-        // Plynulá rotace otevírání/zavírání
-        Quaternion targetRotation = open ? openRot : defaultRot;
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, Time.deltaTime * smooth);
+        isOpen = !isOpen;
+        if (animationCoroutine != null) StopCoroutine(animationCoroutine);
+        animationCoroutine = StartCoroutine(AnimateDoor(isOpen ? openRotation : defaultRotation));
     }
 
-    // Detekce, že hráč VEŠEL do zóny
-    void OnTriggerEnter(Collider other)
+    private IEnumerator AnimateDoor(Vector3 targetRotation)
     {
-        if (other.CompareTag("Player")) 
-        {
-            enter = true;
-        }
-    }
+        Quaternion startRotation = transform.rotation;
+        Quaternion endRotation = Quaternion.Euler(targetRotation);
+        float time = 0;
 
-    // Detekce, že hráč ODEŠEL ze zóny
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        while (time < 1)
         {
-            enter = false;
+            transform.rotation = Quaternion.Slerp(startRotation, endRotation, time);
+            time += Time.deltaTime * openSpeed;
+            yield return null;
         }
+        transform.rotation = endRotation;
     }
 }
