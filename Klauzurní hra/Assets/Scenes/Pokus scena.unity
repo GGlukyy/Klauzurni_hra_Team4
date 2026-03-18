@@ -258,7 +258,7 @@ Transform:
   m_GameObject: {fileID: 32513319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.15, y: 16.031, z: -26.89}
+  m_LocalPosition: {x: -53.032, y: 17.237, z: -26.972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23050,7 +23050,7 @@ Transform:
   m_GameObject: {fileID: 882579742}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.8, y: 17.62, z: -29.61}
+  m_LocalPosition: {x: -43.8, y: 17.21, z: -29.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26748,7 +26748,7 @@ Transform:
   m_GameObject: {fileID: 1007365061}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.25, y: 17.62, z: -35.64}
+  m_LocalPosition: {x: -52.25, y: 17.4, z: -35.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29764,7 +29764,7 @@ GameObject:
   - component: {fileID: 1367333059}
   - component: {fileID: 1367333058}
   - component: {fileID: 1367333057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monstrum Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74604,7 +74604,7 @@ Transform:
   m_GameObject: {fileID: 2142540200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.926, y: 16.053, z: -7.464}
+  m_LocalPosition: {x: -51.778, y: 15.702, z: -9.428}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
