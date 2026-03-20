@@ -5,30 +5,46 @@ public class PlayerInteract : MonoBehaviour
 {
     [Header("Nastavení Interakce")]
     public float interactRange = 3f;
-    public LayerMask interactableLayers; // V Inspectoru nastav na vrstvu "Interactable"
+    
+    [Tooltip("POZOR: Zde musí být zaškrtnuté OBĚ vrstvy - Interactable i ta tvoje Outline!")]
+    public LayerMask interactableLayers; 
+
+    [Header("Outline Nastavení")]
+    [Tooltip("Číslo vrstvy, která dělá tvůj Outline efekt (např. 8)")]
+    public int outlineLayerIndex; 
 
     [Header("Input Akce")]
-    public InputActionReference interactAction; // Levé tlačítko myši (nebo E)
-    public InputActionReference lookAction;     // Pohyb myši (čte Mouse Delta)
+    public InputActionReference interactAction; 
 
-    [Header("Bonus: Ruka")]
-    public Animator handAnimator; // Zbraň nebo ruka
+    [Header("References")]
+    public Camera mainCam;
 
-    private PhasmaDoor grabbedDoor = null;
+    private PhasmaGrabForce grabbedDoor = null;
+    private GameObject physicsHand; 
+    private Rigidbody handRb;
+    private float grabDistance; 
 
-    private void Start()
+    // Proměnné pro ukládání stavu pohledu (Outline)
+    private GameObject currentLookTarget;
+    private int originalLayer;
+
+    private void Awake()
     {
-        // DŮLEŽITÉ: Bez tohoto ti nový Input System nebude fungovat!
-        if (interactAction != null) interactAction.action.Enable();
-        if (lookAction != null) lookAction.action.Enable();
+        if (mainCam == null) mainCam = Camera.main;
+
+        physicsHand = new GameObject("GrabHand");
+        handRb = physicsHand.AddComponent<Rigidbody>();
+        handRb.isKinematic = true; 
+        handRb.useGravity = false;
     }
 
     private void OnEnable()
     {
         if (interactAction != null)
         {
-            interactAction.action.started += StartInteract;
-            interactAction.action.canceled += StopInteract;
+            interactAction.action.started += StartGrab;
+            interactAction.action.canceled += StopGrab;
+            interactAction.action.Enable(); 
         }
     }
 
@@ -36,69 +52,84 @@ public class PlayerInteract : MonoBehaviour
     {
         if (interactAction != null)
         {
-            interactAction.action.started -= StartInteract;
-            interactAction.action.canceled -= StopInteract;
+            interactAction.action.started -= StartGrab;
+            interactAction.action.canceled -= StopGrab;
         }
     }
 
-        private void StartInteract(InputAction.CallbackContext ctx)
+    private void StartGrab(InputAction.CallbackContext ctx)
     {
-        // KROK 1: Zjistíme, jestli vůbec funguje Input (zmáčknutí klávesy)
-        Debug.Log("1. Input funguje: Zmáčkl jsi klávesu!");
-
         if (DialogueManager.Instance != null && DialogueManager.Instance.dialoguePanel.activeSelf) return;
 
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = mainCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); 
         
-        // Vykreslí viditelný červený paprsek ve Scene view (zmizí po 3 vteřinách)
-        Debug.DrawRay(transform.position, transform.forward * interactRange, Color.red, 3f);
-
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, interactableLayers))
         {
-            // KROK 2: Paprsek trefil vrstvu Interactable
-            Debug.Log("<color=yellow>2. Paprsek narazil do: " + hit.collider.gameObject.name + "</color>");
-
-            PhasmaDoor door = hit.collider.GetComponent<PhasmaDoor>();
-            if (door != null)
+            grabbedDoor = hit.collider.GetComponent<PhasmaGrabForce>();
+            if (grabbedDoor != null)
             {
-                Debug.Log("<color=green>3. ÚSPĚCH: Chytil jsi dveře!</color>");
-                grabbedDoor = door;
+                grabDistance = Vector3.Distance(mainCam.transform.position, hit.point);
+                physicsHand.transform.position = hit.point; 
+                grabbedDoor.Grab(handRb, hit.point);
                 return;
             }
 
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
             if (interactable != null)
             {
-                Debug.Log("<color=green>3. ÚSPĚCH: Spuštěna interakce (NPC)!</color>");
                 interactable.Interact();
-                
-                if (handAnimator != null) handAnimator.SetTrigger("Interact");
             }
-            else
-            {
-                // KROK 3: Trefili jsme objekt, ale nemá na sobě správný skript
-                Debug.Log("<color=red>3. CHYBA: Objekt má sice vrstvu Interactable, ale chybí mu skript PhasmaDoor nebo IInteractable!</color>");
-            }
-        }
-        else
-        {
-            Debug.Log("<color=orange>2. Paprsek letí do prázdna (nebo objekt nemá vrstvu Interactable).</color>");
         }
     }
-    private void StopInteract(InputAction.CallbackContext ctx)
+
+    private void StopGrab(InputAction.CallbackContext ctx)
     {
-        // Když hráč pustí tlačítko interakce, pustíme dveře
-        grabbedDoor = null; 
+        if (grabbedDoor != null)
+        {
+            grabbedDoor.Release();
+            grabbedDoor = null; 
+        }
     }
 
     private void Update()
     {
-        // 3. Fyzikální tahání za dveře
-        if (grabbedDoor != null && lookAction != null)
+        // 1. Fyzikální tahání za dveře
+        if (grabbedDoor != null && physicsHand != null)
         {
-            // Přečteme pohyb myši na ose X (doleva / doprava)
-            float mouseX = lookAction.action.ReadValue<Vector2>().x;
-            grabbedDoor.PullDoor(mouseX);
+            physicsHand.transform.position = mainCam.transform.position + mainCam.transform.forward * grabDistance;
+        }
+
+        // 2. OUTLINE SYSTÉM (Hlídá, na co se zrovna díváme)
+        Ray ray = mainCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); 
+        
+        if (Physics.Raycast(ray, out RaycastHit hit, interactRange, interactableLayers))
+        {
+            GameObject hitObj = hit.collider.gameObject;
+
+            // Pokud jsme se podívali na nový objekt
+            if (hitObj != currentLookTarget)
+            {
+                RemoveOutline(); // Nejdřív vypneme starý outline (pokud jsme předtím koukali na něco jiného)
+
+                currentLookTarget = hitObj;
+                originalLayer = currentLookTarget.layer; // Uložíme si, jakou vrstvu to mělo (Interactable)
+                currentLookTarget.layer = outlineLayerIndex;  // Přepneme na tvůj Outline
+            }
+        }
+        else
+        {
+            // Pokud se díváme do zdi nebo do prázdna, vypneme Outline
+            RemoveOutline();
+        }
+    }
+
+    // Pomocná funkce, která vrátí objektu jeho původní vrstvu
+    private void RemoveOutline()
+    {
+        if (currentLookTarget != null)
+        {
+            currentLookTarget.layer = originalLayer; 
+            currentLookTarget = null;
         }
     }
 }
