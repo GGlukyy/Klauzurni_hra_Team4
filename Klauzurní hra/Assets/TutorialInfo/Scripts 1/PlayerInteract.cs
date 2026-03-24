@@ -65,6 +65,7 @@ public class PlayerInteract : MonoBehaviour
         
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, interactableLayers))
         {
+            // 1. Check na dveře
             grabbedDoor = hit.collider.GetComponent<PhasmaGrabForce>();
             if (grabbedDoor != null)
             {
@@ -74,6 +75,23 @@ public class PlayerInteract : MonoBehaviour
                 return;
             }
 
+            // 2. CHECK NA SPREJOVÁNÍ (NOVÉ)
+            SprayZone sprayZone = hit.collider.GetComponent<SprayZone>();
+            if (sprayZone != null)
+            {
+                // Zkontrolujeme, jestli se držený předmět jmenuje "SprayCan" (nebo jakkoli se jmenuje tvůj model spreje)
+                if (PlayerInventory.Instance != null && PlayerInventory.Instance.GetCurrentItemName().Contains("Spray"))
+                {
+                    sprayZone.Spray(hit.point, hit.normal);
+                }
+                else
+                {
+                    Debug.Log("Na toto potřebuješ sprej!"); // Případně vypiš hráči na UI
+                }
+                return; // Ukončíme, dál se nic neinteraguje
+            }
+
+            // 3. Normální interakce
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
             if (interactable != null)
             {

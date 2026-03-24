@@ -122,4 +122,13 @@ public class PlayerInventory : MonoBehaviour
             }
         }
     }
+
+    // Přidaná metoda pro kontrolu drženého předmětu
+    public string GetCurrentItemName()
+    {
+        if (slots[currentSlot] != null) 
+            return slots[currentSlot].gameObject.name;
+        
+        return "";
+    }
 }
