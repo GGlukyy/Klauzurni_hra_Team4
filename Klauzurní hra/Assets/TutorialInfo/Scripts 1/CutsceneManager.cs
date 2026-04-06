@@ -22,13 +22,17 @@ public class CutsceneManager : MonoBehaviour
         }
     }
 
+    // Přidej do OnCutsceneEnded v CutsceneManager.cs
     void OnCutsceneEnded(PlayableDirector pd)
     {
-        // 3. Cutscéna skončila, zapneme ovládání a vrátíme kontrolu hráči
         foreach (var script in scriptsToDisable)
         {
             if (script != null) script.enabled = true;
         }
+
+        // NAJDE A VYPNEME CONSTRAINT
+        var constraint = Camera.main.GetComponent<UnityEngine.Animations.LookAtConstraint>();
+        if (constraint != null) constraint.enabled = false; 
     }
 
     void OnDestroy()

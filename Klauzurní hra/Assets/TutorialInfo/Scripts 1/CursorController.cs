@@ -38,4 +38,10 @@ public class CursorController : MonoBehaviour
         // 2. Aplikujeme otáčení doleva/doprava na CELOU KAPSLI (hráče)
         playerBody.Rotate(Vector3.up * mouseX);
     }
+    private void OnEnable()
+    {
+        // Načte aktuální rotaci kamery, aby se xRotation neresetovala na 0
+        Vector3 rotation = cameraTransform.localEulerAngles;
+        xRotation = rotation.x > 180 ? rotation.x - 360 : rotation.x;
+    }
 }
