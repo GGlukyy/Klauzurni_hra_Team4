@@ -12152,6 +12152,7 @@ GameObject:
   - component: {fileID: 60243071}
   - component: {fileID: 60243070}
   - component: {fileID: 60243072}
+  - component: {fileID: 60243073}
   m_Layer: 0
   m_Name: IntroCutscene
   m_TagString: Untagged
@@ -12228,6 +12229,20 @@ MonoBehaviour:
   director: {fileID: 60243070}
   scriptsToDisable:
   - {fileID: 1048645567}
+--- !u!114 &60243073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60243069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d182beee80b78046a6125c05291c73f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneFixer1
+  director: {fileID: 60243070}
+  myMouseScript: {fileID: 843063248}
 --- !u!43 &60502636
 Mesh:
   m_ObjectHideFlags: 0
@@ -28193,7 +28208,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
@@ -28330,7 +28345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 908274d6344477b4cafff13e15910d16, type: 3}
   m_Name: 
@@ -31966,7 +31981,7 @@ Transform:
   m_GameObject: {fileID: 419365749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.800575, y: 15.363, z: -8.647}
+  m_LocalPosition: {x: -99.155, y: 0.562, z: -11.786}
   m_LocalScale: {x: 1, y: 2.578, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43618,13 +43633,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839842406}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.241295, y: 15.917004, z: -11.204693}
+  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.70710695}
+  m_LocalPosition: {x: -101.008, y: 1.2230037, z: -22.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &839842414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43691,8 +43706,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CursorController
   mouseSensitivity: 10
-  playerBody: {fileID: 1048645569}
+  playerBody: {fileID: 2070105206}
   cameraTransform: {fileID: 330585546}
+  inCutscene: 1
+  cutsceneSensitivity: 3.53
+  maxAngleX: 20
+  maxAngleY: 15
+  returnSpeed: 4
 --- !u!114 &843063249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63263,7 +63283,7 @@ Transform:
   m_GameObject: {fileID: 1337238436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -51.369, y: 15.577, z: -10.428448}
+  m_LocalPosition: {x: -98.333, y: 0.883, z: -14.782}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -382028,7 +382048,7 @@ Transform:
   m_GameObject: {fileID: 2008255230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.800575, y: 15.363, z: -8.042}
+  m_LocalPosition: {x: -99.165, y: 0.669, z: -10.419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -382523,7 +382543,7 @@ Transform:
   m_GameObject: {fileID: 2038327539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50.800575, y: 15.363, z: -7.516}
+  m_LocalPosition: {x: -99.116, y: 0.669, z: -10.848552}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
