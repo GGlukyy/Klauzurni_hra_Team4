@@ -60840,7 +60840,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -72.7298
+      value: -72.668
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalPosition.y
@@ -60848,11 +60848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.196873
+      value: -38.002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.60548854
+      value: 0.7811492
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalRotation.x
@@ -60860,7 +60860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.79585403
+      value: -0.62434447
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalRotation.z
@@ -60872,7 +60872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -105.472
+      value: -77.268
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -70542,7 +70542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1495838351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78249,7 +78249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2037324689
 BoxCollider:
   m_ObjectHideFlags: 0
