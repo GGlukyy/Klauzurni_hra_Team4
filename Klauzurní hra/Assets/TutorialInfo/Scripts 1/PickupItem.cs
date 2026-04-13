@@ -5,6 +5,8 @@ public class PickupItem : MonoBehaviour, IInteractable
 {
     public Rigidbody rb;
     public Collider coll;
+    
+    public string itemName; // Sem v Inspectoru napíšeš např. "Klic_Zachody"
 
     private void Awake()
     {
