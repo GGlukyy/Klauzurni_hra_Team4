@@ -24,7 +24,6 @@ public class PlayerInteract : MonoBehaviour
     private Rigidbody handRb;
     private float grabDistance; 
 
-    // Proměnné pro ukládání stavu pohledu (Outline)
     private GameObject currentLookTarget;
     private int originalLayer;
 
@@ -65,7 +64,15 @@ public class PlayerInteract : MonoBehaviour
         
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, interactableLayers))
         {
-            // 1. Check na dveře
+            // 1. NEJPRVE KONTROLA ZÁMKU
+            LockedDoor lockedDoor = hit.collider.GetComponent<LockedDoor>();
+            if (lockedDoor != null && lockedDoor.isLocked)
+            {
+                lockedDoor.Interact(); // Zkusí odemknout
+                return; // Zastaví akci, takže dveře zatím nepůjdou tahat
+            }
+
+            // 2. TVOJE PŮVODNÍ TAHÁNÍ DVEŘÍ (PhasmaGrabForce)
             grabbedDoor = hit.collider.GetComponent<PhasmaGrabForce>();
             if (grabbedDoor != null)
             {
@@ -75,25 +82,9 @@ public class PlayerInteract : MonoBehaviour
                 return;
             }
 
-            // 2. CHECK NA SPREJOVÁNÍ (NOVÉ)
-            SprayZone sprayZone = hit.collider.GetComponent<SprayZone>();
-            if (sprayZone != null)
-            {
-                // Zkontrolujeme, jestli se držený předmět jmenuje "SprayCan" (nebo jakkoli se jmenuje tvůj model spreje)
-                if (PlayerInventory.Instance != null && PlayerInventory.Instance.GetCurrentItemName().Contains("Spray"))
-                {
-                    sprayZone.Spray(hit.point, hit.normal);
-                }
-                else
-                {
-                    Debug.Log("Na toto potřebuješ sprej!"); // Případně vypiš hráči na UI
-                }
-                return; // Ukončíme, dál se nic neinteraguje
-            }
-
-            // 3. Normální interakce
+            // 3. OSTATNÍ INTERAKCE (Sběr klíčů atd.)
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-            if (interactable != null)
+            if (interactable != null && interactable is not LockedDoor) // Zámek už jsme řešili nahoře
             {
                 interactable.Interact();
             }
@@ -124,24 +115,21 @@ public class PlayerInteract : MonoBehaviour
         {
             GameObject hitObj = hit.collider.gameObject;
 
-            // Pokud jsme se podívali na nový objekt
             if (hitObj != currentLookTarget)
             {
-                RemoveOutline(); // Nejdřív vypneme starý outline (pokud jsme předtím koukali na něco jiného)
+                RemoveOutline(); 
 
                 currentLookTarget = hitObj;
-                originalLayer = currentLookTarget.layer; // Uložíme si, jakou vrstvu to mělo (Interactable)
-                currentLookTarget.layer = outlineLayerIndex;  // Přepneme na tvůj Outline
+                originalLayer = currentLookTarget.layer; 
+                currentLookTarget.layer = outlineLayerIndex; 
             }
         }
         else
         {
-            // Pokud se díváme do zdi nebo do prázdna, vypneme Outline
             RemoveOutline();
         }
     }
 
-    // Pomocná funkce, která vrátí objektu jeho původní vrstvu
     private void RemoveOutline()
     {
         if (currentLookTarget != null)

@@ -3,10 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public class PickupItem : MonoBehaviour, IInteractable
 {
+    [Header("Nastavení Předmětu")]
+    [Tooltip("Název předmětu pro odemykání (např. 'Klic_WC', 'Karta_Level1', 'Sprej')")]
+    public string itemName; 
+
     public Rigidbody rb;
     public Collider coll;
-    
-    public string itemName; // Sem v Inspectoru napíšeš např. "Klic_Zachody"
 
     private void Awake()
     {

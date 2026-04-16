@@ -9,8 +9,8 @@ public class PlayerInventory : MonoBehaviour
     public Transform handPosition; 
     
     [Header("Animace (Nesahej do Animatoru)")]
-    public Animator playerAnimator; // Přetáhni hráče
-    public int armLayerIndex = 1; // Vrstva 1 je většinou ta tvoje maska (0 je Base Layer)
+    public Animator playerAnimator; 
+    public int armLayerIndex = 1; 
 
     private PickupItem[] slots = new PickupItem[3];
     private int currentSlot = 0;
@@ -69,36 +69,27 @@ public class PlayerInventory : MonoBehaviour
     }
 
     public void SwitchSlot(int index)
+    {
+        currentSlot = index;
+        bool hasItemInHand = false; 
+
+        for (int i = 0; i < slots.Length; i++)
         {
-            currentSlot = index;
-            bool hasItemInHand = false; 
-
-            for (int i = 0; i < slots.Length; i++)
+            if (slots[i] != null)
             {
-                if (slots[i] != null)
-                {
-                    bool isActive = (i == currentSlot);
-                    slots[i].gameObject.SetActive(isActive);
-                    
-                    if (isActive) hasItemInHand = true; 
-                }
-            }
-
-            // --- ŘEKNE ANIMATORU, JESTLI MÁ ZVEDNOUT RUKU ---
-            if (playerAnimator != null)
-            {
-                // Pokud držíme = 1 (zapnuto), pokud ne = 0 (vypnuto)
-                float targetWeight = hasItemInHand ? 1f : 0f;
-                playerAnimator.SetLayerWeight(armLayerIndex, targetWeight);
+                bool isActive = (i == currentSlot);
+                slots[i].gameObject.SetActive(isActive);
                 
-                // --- DIAGNOSTIKA ---
-                string itemName = hasItemInHand ? slots[currentSlot].name : "PRÁZDNO";
-                Debug.Log($"<b>[DIAG] Inventory:</b> Slot {index}, Věc v ruce: {itemName}, Váha vrstvy {armLayerIndex} nastavena na: {targetWeight}");
-                // --- KONEC DIAGNOSTIKY ---
-            } else {
-                Debug.LogError("<b>[DIAG] CHYBA:</b> Políčko 'Player Animator' v PlayerInventory je prázdné (None)! Ruka se nemůže zvednout.");
+                if (isActive) hasItemInHand = true; 
             }
         }
+
+        if (playerAnimator != null)
+        {
+            float targetWeight = hasItemInHand ? 1f : 0f;
+            playerAnimator.SetLayerWeight(armLayerIndex, targetWeight);
+        }
+    }
 
     public void DropItem()
     {
@@ -115,7 +106,6 @@ public class PlayerInventory : MonoBehaviour
 
             slots[currentSlot] = null;
 
-            // --- Když vyhodíme poslední věc, ruka jde dolů ---
             if (playerAnimator != null)
             {
                 playerAnimator.SetLayerWeight(armLayerIndex, 0f);
@@ -123,12 +113,22 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    // Přidaná metoda pro kontrolu drženého předmětu
-    public string GetCurrentItemName()
+    // --- NOVÉ PŘIDANÉ FUNKCE PRO ZÁMEK/SPREJ ---
+    
+    // Vrátí předmět, který hráč zrovna drží v ruce
+    public PickupItem GetCurrentItem()
     {
-        if (slots[currentSlot] != null) 
-            return slots[currentSlot].gameObject.name;
-        
-        return "";
+        return slots[currentSlot];
+    }
+
+    // Zničí předmět, který má hráč v ruce (použití jednorázového klíče)
+    public void ConsumeCurrentItem()
+    {
+        if (slots[currentSlot] != null)
+        {
+            Destroy(slots[currentSlot].gameObject);
+            slots[currentSlot] = null;
+            if (playerAnimator != null) playerAnimator.SetLayerWeight(armLayerIndex, 0f);
+        }
     }
 }

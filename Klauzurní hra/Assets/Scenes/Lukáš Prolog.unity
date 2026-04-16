@@ -102692,8 +102692,8 @@ Light:
   m_Color: {r: 0.990566, g: 0.22895159, b: 0.23664635, a: 1}
   m_Intensity: 26.12
   m_Range: 47.7
-  m_SpotAngle: 28.905254
-  m_InnerSpotAngle: 6.1750984
+  m_SpotAngle: 33.16716
+  m_InnerSpotAngle: 10.437003
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -102753,7 +102753,7 @@ Transform:
   m_GameObject: {fileID: 1288608892}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -162.507, y: 12.22, z: -88.829}
+  m_LocalPosition: {x: -162.507, y: 10.918, z: -88.829}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -120413,7 +120413,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1571891416}
+  m_Mesh: {fileID: 1691410107}
 --- !u!33 &1752106209
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -122919,7 +122919,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 664827070}
+  m_Mesh: {fileID: 1539164864}
 --- !u!33 &1882659036
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -132910,8 +132910,8 @@ Light:
   m_Color: {r: 0.5943396, g: 0.49315426, b: 0.17101279, a: 1}
   m_Intensity: 116.73
   m_Range: 9.72
-  m_SpotAngle: 74.03968
-  m_InnerSpotAngle: 64.42113
+  m_SpotAngle: 82.563484
+  m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -133516,6 +133516,22 @@ PrefabInstance:
     - target: {fileID: 4008291428875508297, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.73672414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6210804
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.23752668
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.12279132
       objectReference: {fileID: 0}
     - target: {fileID: 6907312903956990876, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
