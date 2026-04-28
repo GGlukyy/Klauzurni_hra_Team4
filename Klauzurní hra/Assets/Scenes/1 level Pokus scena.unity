@@ -14301,7 +14301,7 @@ PlayableDirector:
   m_GameObject: {fileID: 60243069}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 1f5779635581ebf468ec917c47991a61, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -14330,6 +14330,26 @@ PlayableDirector:
   - key: {fileID: 3899315538072778047, guid: 1f5779635581ebf468ec917c47991a61, type: 2}
     value: {fileID: 1203437520}
   - key: {fileID: 90090942646381911, guid: 1f5779635581ebf468ec917c47991a61, type: 2}
+    value: {fileID: 330585551}
+  - key: {fileID: -555080057076525851, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 2070105207}
+  - key: {fileID: 1717898239508893306, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 980175992}
+  - key: {fileID: 1914432564032409061, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 1568701457}
+  - key: {fileID: -2915723263110744014, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 1890169736}
+  - key: {fileID: 3899315538072778047, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 1203437520}
+  - key: {fileID: -1129742046901941413, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 1248481637}
+  - key: {fileID: -7964260311270215016, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 240096691}
+  - key: {fileID: 2249675415753716127, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 330585551}
+  - key: {fileID: 8450408967512433866, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
+    value: {fileID: 1724272771}
+  - key: {fileID: 90090942646381911, guid: c1199598bf4137146826c3a9b45e994c, type: 2}
     value: {fileID: 330585551}
   m_ExposedReferences:
     m_References: []
@@ -75849,13 +75869,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: f79c33a31cd9f0f42a4574cce59f40e7, type: 2}
     - target: {fileID: 5866666021909216657, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'mixamorig:LeftFoot'\n\tTransform 'mixamorig:LeftHandThumb2'\n\tTransform
-        'mixamorig:LeftHandIndex1'\n\tTransform 'mixamorig:LeftHandPinky2'\n\tTransform
-        'mixamorig:RightHandRing2'\n\tTransform 'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform
-        'mixamorig:LeftHandThumb3'\n\tTransform 'mixamorig:RightArm'\n\tTransform
-        'mixamorig:LeftLeg'\n\tand more ..."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
       propertyPath: m_ApplyRootMotion
@@ -83141,7 +83155,7 @@ Transform:
   m_GameObject: {fileID: 1048645566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -99.65486, y: 0.07, z: -10.301107}
+  m_LocalPosition: {x: -99.613, y: 0.07, z: -10.660254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -390497,19 +390511,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: 6ab2441d7633fda4faa548d7fe6db1fe, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99423707
+      value: 0.99594676
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: 6ab2441d7633fda4faa548d7fe6db1fe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.103922226
+      value: -0.08820294
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: 6ab2441d7633fda4faa548d7fe6db1fe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.025079638
+      value: -0.016696751
       objectReference: {fileID: 0}
     - target: {fileID: -3321919801592875672, guid: 6ab2441d7633fda4faa548d7fe6db1fe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007990058
+      value: 0.0056117703
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6ab2441d7633fda4faa548d7fe6db1fe, type: 3}
       propertyPath: m_Name
@@ -492052,7 +492066,7 @@ PrefabInstance:
       objectReference: {fileID: 1939886954}
     - target: {fileID: 2229136489257815932, guid: 77fac1d2cdf0cba43bc85db93fbb388e, type: 3}
       propertyPath: m_VersionIndex
-      value: 2431
+      value: 2437
       objectReference: {fileID: 0}
     - target: {fileID: 3847302218280302746, guid: 77fac1d2cdf0cba43bc85db93fbb388e, type: 3}
       propertyPath: m_LocalPosition.x
