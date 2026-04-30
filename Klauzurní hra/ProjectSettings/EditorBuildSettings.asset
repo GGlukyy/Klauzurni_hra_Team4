@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/Luk\xE1\u0161 Prolog.unity"
+    guid: 1befb75e22aace044abe9ad7087f970f
+  - enabled: 1
     path: Assets/Scenes/1 level Pokus scena.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
