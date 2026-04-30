@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI; // NOVÉ: Potřebujeme pro práci s UI (Image)
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class PlayerInteract : MonoBehaviour
     [Header("Outline Nastavení")]
     [Tooltip("Číslo vrstvy, která dělá tvůj Outline efekt (např. 8)")]
     public int outlineLayerIndex; 
+
+    [Header("UI Kurzor (Zámek)")] // --- NOVÉ ---
+    public Image crosshairImage; // Obrázek kurzoru uprostřed obrazovky
+    public Sprite normalCursorSprite; // Základní tečka/kurzor
+    public Sprite lockedCursorSprite; // Ikonka zámku
 
     [Header("Input Akce")]
     public InputActionReference interactAction; 
@@ -68,11 +74,11 @@ public class PlayerInteract : MonoBehaviour
             LockedDoor lockedDoor = hit.collider.GetComponent<LockedDoor>();
             if (lockedDoor != null && lockedDoor.isLocked)
             {
-                lockedDoor.Interact(); // Zkusí odemknout
-                return; // Zastaví akci, takže dveře zatím nepůjdou tahat
+                lockedDoor.Interact(); 
+                return; 
             }
 
-            // 2. TVOJE PŮVODNÍ TAHÁNÍ DVEŘÍ (PhasmaGrabForce)
+            // 2. TAHÁNÍ DVEŘÍ
             grabbedDoor = hit.collider.GetComponent<PhasmaGrabForce>();
             if (grabbedDoor != null)
             {
@@ -82,9 +88,9 @@ public class PlayerInteract : MonoBehaviour
                 return;
             }
 
-            // 3. OSTATNÍ INTERAKCE (Sběr klíčů atd.)
+            // 3. OSTATNÍ INTERAKCE
             IInteractable interactable = hit.collider.GetComponent<IInteractable>();
-            if (interactable != null && interactable is not LockedDoor) // Zámek už jsme řešili nahoře
+            if (interactable != null && interactable is not LockedDoor) 
             {
                 interactable.Interact();
             }
@@ -108,13 +114,22 @@ public class PlayerInteract : MonoBehaviour
             physicsHand.transform.position = mainCam.transform.position + mainCam.transform.forward * grabDistance;
         }
 
-        // 2. OUTLINE SYSTÉM (Hlídá, na co se zrovna díváme)
+        // 2. OUTLINE SYSTÉM A KONTROLA KURZORU
         Ray ray = mainCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); 
-        
+        bool lookingAtLockedDoor = false; // --- NOVÉ: Připravíme si proměnnou pro kurzor ---
+
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange, interactableLayers))
         {
             GameObject hitObj = hit.collider.gameObject;
 
+            // --- NOVÉ: Zkontrolujeme, jestli se zrovna nedíváme na zamčené dveře ---
+            LockedDoor lockedDoor = hitObj.GetComponent<LockedDoor>();
+            if (lockedDoor != null && lockedDoor.isLocked)
+            {
+                lookingAtLockedDoor = true; // Zaznamenáme si, že koukáme na zámek
+            }
+
+            // Outline logika
             if (hitObj != currentLookTarget)
             {
                 RemoveOutline(); 
@@ -127,6 +142,13 @@ public class PlayerInteract : MonoBehaviour
         else
         {
             RemoveOutline();
+        }
+
+        // --- NOVÉ: Přepnutí ikonky kurzoru ---
+        if (crosshairImage != null)
+        {
+            // Pokud se díváme na zamčené dveře, nastav ikonku zámku, jinak základní tečku
+            crosshairImage.sprite = lookingAtLockedDoor ? lockedCursorSprite : normalCursorSprite;
         }
     }
 
