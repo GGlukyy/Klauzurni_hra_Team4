@@ -260,9 +260,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BrokenLight
   lightSource: {fileID: 0}
-  minIntensity: 0
+  minIntensity: 6.9
   maxIntensity: 10
-  flickerSpeed: 7.35
+  flickerSpeed: 2.75
   sharpFlicker: 1
 --- !u!1 &12892799
 GameObject:
