@@ -13,7 +13,8 @@ public class TrainTimerEvent : MonoBehaviour
     [Header("Lights Setup")]
     public Light[] targetLights; // V inspektoru můžeš měnit velikost pole (+/-)
     public float flickerDuration = 3f;
-    public float flickerSpeed = 0.1f;
+    public float minFlickerDelay = 0.05f; // Minimální čas mezi probliknutím (pro realističtější praskání)
+    public float maxFlickerDelay = 0.2f;  // Maximální čas mezi probliknutím
     public float darkDurationBeforeTrain = 1f;
 
     [Header("Train Sequence")]
@@ -26,6 +27,9 @@ public class TrainTimerEvent : MonoBehaviour
     private void Start()
     {
         currentTimer = timeBetweenTrains;
+        
+        // Ujistíme se, že na začátku hry všechna světla normálně svítí
+        SetLightsState(true);
     }
 
     private void Update()
@@ -55,32 +59,34 @@ public class TrainTimerEvent : MonoBehaviour
     {
         isSequenceRunning = true;
 
-        // 1. Varování - Zvuk a blikání
+        // 1. Varování - Zvuk
         if (levelAudioSource != null && warningSound != null)
         {
             levelAudioSource.PlayOneShot(warningSound);
         }
 
+        // 2. Realistické blikání / praskání
         float flickerTimer = 0f;
         while (flickerTimer < flickerDuration)
         {
             foreach (Light l in targetLights)
             {
-                if (l != null) l.enabled = !l.enabled;
+                // Každé světlo si "hodí mincí", jestli bude v tento moment svítit nebo zkratuje
+                if (l != null) l.enabled = Random.value > 0.5f;
             }
-            yield return new WaitForSeconds(flickerSpeed);
-            flickerTimer += flickerSpeed;
+            
+            // Náhodná pauza vytváří ten efekt nepravidelného praskání
+            float randomDelay = Random.Range(minFlickerDelay, maxFlickerDelay);
+            yield return new WaitForSeconds(randomDelay);
+            flickerTimer += randomDelay;
         }
 
-        // 2. Absolutní tma před příjezdem
-        foreach (Light l in targetLights)
-        {
-            if (l != null) l.enabled = false;
-        }
+        // 3. Absolutní tma před příjezdem
+        SetLightsState(false);
 
         yield return new WaitForSeconds(darkDurationBeforeTrain);
 
-        // 3. Spuštění vlaku (Timeline cutscéna)
+        // 4. Spuštění vlaku (Timeline cutscéna)
         if (trainTimeline != null)
         {
             trainTimeline.Play();
@@ -88,13 +94,19 @@ public class TrainTimerEvent : MonoBehaviour
             yield return new WaitForSeconds((float)trainTimeline.duration);
         }
 
-        // 4. Rozsvícení a reset do další smyčky
-        foreach (Light l in targetLights)
-        {
-            if (l != null) l.enabled = true;
-        }
+        // 5. Rozsvícení a reset do další smyčky
+        SetLightsState(true);
 
         currentTimer = timeBetweenTrains;
         isSequenceRunning = false;
+    }
+
+    // Pomocná metoda pro rychlé hromadné zapnutí/vypnutí světel
+    private void SetLightsState(bool state)
+    {
+        foreach (Light l in targetLights)
+        {
+            if (l != null) l.enabled = state;
+        }
     }
 }
