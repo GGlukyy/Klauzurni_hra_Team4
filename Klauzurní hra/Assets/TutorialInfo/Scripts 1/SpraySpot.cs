@@ -3,49 +3,53 @@ using System.Collections;
 
 public class SpraySpot : MonoBehaviour, IInteractable
 {
-    [Header("Nastavení Spreje")]
-    [Tooltip("Vlož sem víc prefabů pro střídání tagů")]
-    public GameObject[] decalPrefabs; 
-    public float fadeSpeed = 2f;   
     
-    [Header("Zvuk")]
+    [Header("Spray Settings")]
+    [Tooltip("Add multiple prefabs to randomize tags")]
+    public GameObject[] decalPrefabs; 
+    public float fadeSpeed = 2f;
+    
+    [Tooltip("How many times can this spot be sprayed?")]
+    public int maxSprays = 1;
+
+    [Header("Audio")]
     public AudioSource sprayAudio; 
 
-    // Hlídá, jestli už tato zeď byla posprejována
-    private bool hasBeenSprayed = false;
+    private int currentSprays = 0;
 
     public void Interact()
     {
-        if (hasBeenSprayed) return; // Jde to jen jednou
-        if (decalPrefabs.Length == 0) return; // Ochrana, kdybys zapomněl vložit prefaby
+        // ITEM CHECK: Implement your inventory check here to prevent empty-hand spraying
+        // if (!PlayerInventory.Instance.HasItem("SprayCan")) return; 
 
-        // Uděláme si rychlý lokální Raycast, abychom zjistili PŘESNÝ bod dopadu a úhel zdi
+        if (currentSprays >= maxSprays) return; 
+        if (decalPrefabs.Length == 0) return; 
+
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         
-        // Střelíme paprsek (max na 5 metrů, ať neposprejuješ zeď na kilometr)
         if (Physics.Raycast(ray, out RaycastHit hit, 5f))
         {
-            // 1. Vybere náhodný tag ze seznamu
             int randomIndex = Random.Range(0, decalPrefabs.Length);
             GameObject selectedDecal = decalPrefabs[randomIndex];
 
-            // 2. Vytvoří decal přesně na bodu dopadu a natočí ho podle zdi (tvůj starý dobrý kód)
             GameObject decal = Instantiate(selectedDecal, hit.point, Quaternion.LookRotation(hit.normal));
             decal.transform.position += hit.normal * 0.005f; // Z-fighting fix
 
             if (sprayAudio != null) sprayAudio.Play();
             StartCoroutine(FadeInDecal(decal));
 
-            // 3. PROPOJENÍ NA SANITY SYSTÉM (Vyléčí sanity, přidá bod ke špatnému konci)
             if (SanityManager.Instance != null)
             {
                 SanityManager.Instance.AddSpray();
             }
 
-            hasBeenSprayed = true; // Zamknout
+            currentSprays++; 
             
-            // 4. Vypneme interakci - změníme vrstvu na Default, aby už na to nefungoval tvůj Outline
-            gameObject.layer = LayerMask.NameToLayer("Default"); 
+            // Lock interaction only when max sprays are reached
+            if (currentSprays >= maxSprays)
+            {
+                gameObject.layer = LayerMask.NameToLayer("Default"); 
+            }
         }
     }
 
