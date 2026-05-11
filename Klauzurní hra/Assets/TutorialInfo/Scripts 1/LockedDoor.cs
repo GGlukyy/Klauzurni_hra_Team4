@@ -12,29 +12,38 @@ public class LockedDoor : MonoBehaviour, IInteractable
 
     [Header("Code Settings")]
     [Tooltip("Check this if the door is opened by the Keypad instead of a key.")]
-    public bool requiresCode = false; // Toto zaškrtneš u dveří v prvním levelu
+    public bool requiresCode = false;
 
     public void Interact()
     {
-        // 1. Pokud jsou dveře už odemčené, prostě je otevřeme/zavřeme
+        // 1. Otevření/zavření odemčených dveří
         if (!isLocked)
         {
             ToggleDoor();
             return;
         }
 
-        // 2. Pokud jsou dveře na KÓD, ignorujeme klíče
+        // 2. Dveře na kód ignorují klíče v ruce
         if (requiresCode)
         {
             Debug.Log("This door is locked electronically. You need a code.");
-            return; // Ukončí to funkci, takže to dál nehledá klíč
+            return; 
         }
 
-        // 3. PŮVODNÍ LOGIKA PRO KLÍČ
-        // Zde si vlož svou původní kontrolu, jestli má hráč klíč (z inventáře nebo z ruky)
-        // Tohle je ukázka, jak to zhruba funguje:
-        
-        bool hasKey = false; // NAHRAĎ SVOU VLASTNÍ PODMÍNKOU (např. inventory.HasItem(requiredKeyName))
+        // 3. LOGIKA PRO KLÍČ V AKTIVNÍ RUCE
+        bool hasKey = false; 
+
+        if (PlayerInventory.Instance != null)
+        {
+            // Načtení předmětu, který hráč právě drží
+            PickupItem itemInHand = PlayerInventory.Instance.GetCurrentItem();
+            
+            // Kontrola, zda něco drží a jestli se itemName přesně shoduje
+            if (itemInHand != null && itemInHand.itemName == requiredKeyName)
+            {
+                hasKey = true;
+            }
+        }
 
         if (hasKey)
         {
@@ -43,7 +52,8 @@ public class LockedDoor : MonoBehaviour, IInteractable
 
             if (destroyKeyOnUse)
             {
-                // Zde dej svůj kód pro zničení klíče
+                // Zničení předmětu přes tvou hotovou funkci v inventáři
+                PlayerInventory.Instance.ConsumeCurrentItem();
                 Debug.Log("Key destroyed: " + requiredKeyName);
             }
 
@@ -51,24 +61,22 @@ public class LockedDoor : MonoBehaviour, IInteractable
         }
         else
         {
-            Debug.Log("The door is locked. You need: " + requiredKeyName);
+            Debug.Log("The door is locked. You need to hold: " + requiredKeyName);
         }
     }
 
-    // TUTO FUNKCI ZAVOLÁ TVŮJ KEYPAD MANAGER PŘES INSPECTOR
+    // Tuto funkci zavolá Keypad
     public void UnlockDoor()
     {
         isLocked = false;
         Debug.Log("Door unlocked via keypad!");
-        
-        // Pokud chceš, aby se dveře hned i otevřely, když zadáš kód, odkomentuj řádek pod tímto:
-        // ToggleDoor();
+        ToggleDoor(); 
     }
 
     private void ToggleDoor()
     {
         isOpen = !isOpen;
-        // Zde si dej svou původní logiku otevírání/zavírání (např. spuštění animace)
+        // Zde v budoucnu spustíš animaci přes Animator
         Debug.Log(isOpen ? "Door opened." : "Door closed.");
     }
 }
