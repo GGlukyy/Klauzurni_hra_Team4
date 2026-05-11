@@ -69604,6 +69604,8 @@ PlayableDirector:
     value: {fileID: 1048645571}
   - key: {fileID: 1556119189274843394, guid: ac98443e516d9e54ca9b3c2c232e33ce, type: 2}
     value: {fileID: 2070105207}
+  - key: {fileID: 1144079470979656461, guid: ac98443e516d9e54ca9b3c2c232e33ce, type: 2}
+    value: {fileID: 718872428}
   m_ExposedReferences:
     m_References: []
 --- !u!43 &701463302
@@ -70644,6 +70646,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718872428 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7475650371461500064, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+  m_PrefabInstance: {fileID: 9016367183959721062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
 --- !u!1 &730628242
 GameObject:
   m_ObjectHideFlags: 0
@@ -153106,19 +153119,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99937737
       objectReference: {fileID: 0}
     - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.009116836
       objectReference: {fileID: 0}
     - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.033985406
       objectReference: {fileID: 0}
     - target: {fileID: 5498670221827201322, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.0025920302
       objectReference: {fileID: 0}
     - target: {fileID: 5506827098647704265, guid: e52ea17868acae840abc5586aeae4ff3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -153801,6 +153814,34 @@ PrefabInstance:
     - target: {fileID: 5806758005527187411, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475650371461500064, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: 'm_Events.m_Signals.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 63f136e579520204690d6c8ae75ca8a6, type: 2}
+    - target: {fileID: 7475650371461500064, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Here, grab the can. Tag that wall, see what you got.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559813760352929701, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559813760352929701, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559813760352929701, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559813760352929701, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559813760352929701, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9089617380458390626, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
       propertyPath: m_Name
