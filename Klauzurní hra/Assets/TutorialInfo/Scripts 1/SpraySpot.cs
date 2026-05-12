@@ -3,7 +3,6 @@ using System.Collections;
 
 public class SpraySpot : MonoBehaviour, IInteractable
 {
-    
     [Header("Spray Settings")]
     [Tooltip("Add multiple prefabs to randomize tags")]
     public GameObject[] decalPrefabs; 
@@ -19,8 +18,15 @@ public class SpraySpot : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        // ITEM CHECK: Implement your inventory check here to prevent empty-hand spraying
-        // if (!PlayerInventory.Instance.HasItem("SprayCan")) return; 
+        // Kontrola: Má hráč něco v ruce?
+        PickupItem currentItem = PlayerInventory.Instance.GetCurrentItem();
+
+        // Kontrola: Je to, co drží, opravdu sprej? (Pomocí Tagu)
+        if (currentItem == null || !currentItem.CompareTag("SprayCan"))
+        {
+            Debug.Log("Musíš držet sprej v ruce!");
+            return; 
+        }
 
         if (currentSprays >= maxSprays) return; 
         if (decalPrefabs.Length == 0) return; 
