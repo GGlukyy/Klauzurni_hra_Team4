@@ -709,7 +709,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1403490725}
+  m_Mesh: {fileID: 653589568}
 --- !u!33 &8236932
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -101226,7 +101226,7 @@ Transform:
   m_GameObject: {fileID: 1227975554}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.74, y: -1.03, z: -7.88}
+  m_LocalPosition: {x: 4.74, y: -0.72, z: -7.88}
   m_LocalScale: {x: 9.593107, y: 0.10426891, z: 105.20748}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101253,7 +101253,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1521203499}
+  m_Mesh: {fileID: 1403490725}
 --- !u!33 &1227975557
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -410269,7 +410269,7 @@ Transform:
   m_GameObject: {fileID: 1976204450}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.7, y: -0.77, z: -7.88}
+  m_LocalPosition: {x: -13.7, y: -0.66, z: -7.88}
   m_LocalScale: {x: 9.593107, y: 0.10426891, z: 105.20748}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -410296,7 +410296,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1403490725}
+  m_Mesh: {fileID: 1320751254}
 --- !u!33 &1976204453
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -430378,19 +430378,19 @@ PrefabInstance:
       objectReference: {fileID: 330585551}
     - target: {fileID: 7382429788939869876, guid: 66173e331eff5b543a5452f244d2034e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99032235
+      value: 0.98839694
       objectReference: {fileID: 0}
     - target: {fileID: 7382429788939869876, guid: 66173e331eff5b543a5452f244d2034e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.023187293
+      value: -0.018373797
       objectReference: {fileID: 0}
     - target: {fileID: 7382429788939869876, guid: 66173e331eff5b543a5452f244d2034e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.12660453
+      value: 0.13922647
       objectReference: {fileID: 0}
     - target: {fileID: 7382429788939869876, guid: 66173e331eff5b543a5452f244d2034e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.05191684
+      value: -0.05787848
       objectReference: {fileID: 0}
     - target: {fileID: 8781019672933805302, guid: 66173e331eff5b543a5452f244d2034e, type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
