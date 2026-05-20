@@ -1,0 +1,40 @@
+fileFormatVersion: 2
+guid: e8d35cad731d7b746a4045a185027469
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Tim folder\Materials\slab_tiles.bin
+    assetPath: Assets\Tim folder\Materials\slab_tiles.bin
+  - type: 1
+    originalUri: Assets\Tim folder\Materials\textures\slab_tiles_nor_gl_1k.jpg
+    assetPath: Assets\Tim folder\Materials\textures\slab_tiles_nor_gl_1k.jpg
+  - type: 1
+    originalUri: Assets\Tim folder\Materials\textures\slab_tiles_diff_1k.jpg
+    assetPath: Assets\Tim folder\Materials\textures\slab_tiles_diff_1k.jpg
+  - type: 1
+    originalUri: Assets\Tim folder\Materials\textures\slab_tiles_rough_1k.jpg
+    assetPath: Assets\Tim folder\Materials\textures\slab_tiles_rough_1k.jpg
+  reportItems: []
