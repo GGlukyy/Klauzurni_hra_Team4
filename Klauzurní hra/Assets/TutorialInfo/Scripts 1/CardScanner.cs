@@ -3,67 +3,39 @@ using UnityEngine.Playables;
 
 public class CardScanner : MonoBehaviour
 {
-    [Header("Scanner Settings")]
-    [Tooltip("Name of the card required to unlock")]
+    [Header("Nastavení Terminálu")]
+    [Tooltip("Přesný název předmětu (karty), který otevírá tyto dveře")]
     public string requiredCardName = "Level1_Keycard";
-    
-    [Tooltip("If true, the card will be removed from the player's inventory upon success.")]
-    public bool consumeCardOnUse = true;
 
-    [Header("Cutscene Settings")]
-    [Tooltip("The PlayableDirector that plays the door opening cutscene")]
+    [Tooltip("Zaškrtni, pokud má terminál kartu po úspěšném použití zničit/sežrat")]
+    public bool consumeCard = false;
+
+    [Header("Cutscéna (Timeline)")]
+    [Tooltip("PlayableDirector s tvou Timeline animací otevírání")]
     public PlayableDirector doorCutscene;
 
     private bool isAlreadyScanned = false;
 
-    /// <summary>
-    /// Call this from your Raycast/Interact script.
-    /// You might need to pass the Player GameObject to access its inventory.
-    /// </summary>
-    public void TryScanCard(string heldItemName, GameObject playerObject)
+    public bool TryScanCard(string itemNameInHand)
     {
-        if (isAlreadyScanned) return;
+        if (isAlreadyScanned) return false;
 
-        if (heldItemName == requiredCardName)
+        if (itemNameInHand == requiredCardName)
         {
-            UnlockAndPlayCutscene();
+            Debug.Log("Karta přijata! Spouští se otevření dveří.");
+            isAlreadyScanned = true;
 
-            if (consumeCardOnUse)
+            if (doorCutscene != null)
             {
-                ConsumeCard(playerObject);
+                doorCutscene.Play();
             }
+
+            return true; // Vrátí true -> karta byla v pořádku
         }
         else
         {
-            Debug.Log("Access Denied: Wrong card or empty hands.");
+            Debug.Log("Přístup odepřen: Nemáš správnou kartu.");
+            return false; // Vrátí false -> špatná karta
         }
-    }
-
-    private void UnlockAndPlayCutscene()
-    {
-        isAlreadyScanned = true;
-        Debug.Log("Access Granted! Playing cutscene...");
-
-        if (doorCutscene != null)
-        {
-            doorCutscene.Play(); 
-        }
-        else
-        {
-            Debug.LogWarning("PlayableDirector is missing on the scanner!");
-        }
-    }
-
-    private void ConsumeCard(GameObject playerObject)
-    {
-        // TODO: Propoj s tvým existujícím systémem inventáře (např. PlayerInventory.cs)
-        // Příklad:
-        // PlayerInventory inventory = playerObject.GetComponent<PlayerInventory>();
-        // if (inventory != null)
-        // {
-        //     inventory.RemoveItem(requiredCardName);
-        // }
-        
-        Debug.Log($"Card '{requiredCardName}' was consumed by the scanner.");
     }
 }
