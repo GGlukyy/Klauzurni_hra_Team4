@@ -32,7 +32,6 @@ public class PlayerInteract : MonoBehaviour
 
     private GameObject currentLookTarget;
     private int originalLayer;
-
     private void Awake()
     {
         if (mainCam == null) mainCam = Camera.main;
