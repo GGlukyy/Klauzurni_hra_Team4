@@ -11586,6 +11586,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 752928787}
+    - target: {fileID: 3977046132068127779, guid: 5cd15631e04e58c4bae8bc00ff2aec2f, type: 3}
+      propertyPath: isLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977046132068127779, guid: 5cd15631e04e58c4bae8bc00ff2aec2f, type: 3}
+      propertyPath: requiredKeyName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3977316115442687297, guid: 5cd15631e04e58c4bae8bc00ff2aec2f, type: 3}
       propertyPath: m_Name
       value: DOOR (9)
@@ -46495,7 +46503,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 500
+  m_Intensity: 0
   m_Range: 8000000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -158637,9 +158645,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425619129559101760, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5806758005527187411, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258595934233234232, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 435
       objectReference: {fileID: 0}
     - target: {fileID: 7475650371461500064, guid: 4df9c7e769c177b4eadf647e549e48c6, type: 3}
       propertyPath: 'm_Events.m_Signals.Array.data[0]'
@@ -303813,11 +303849,11 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384354214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: fded7331323f2c6418ea88efd4ffe4cd, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
+  m_CullingMode: 2
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -303837,10 +303873,10 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 3b7eb30e6690f504eb78bb73e3c80d5d, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
+  m_InitialState: 0
+  m_WrapMode: 0
   m_DirectorUpdateMode: 3
-  m_InitialTime: 3
+  m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 1376038005365873575, guid: 3b7eb30e6690f504eb78bb73e3c80d5d, type: 2}
     value: {fileID: 1384354215}
@@ -370667,6 +370703,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1620190388}
+    - target: {fileID: 3977046132068127779, guid: 5cd15631e04e58c4bae8bc00ff2aec2f, type: 3}
+      propertyPath: isLocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3977316115442687297, guid: 5cd15631e04e58c4bae8bc00ff2aec2f, type: 3}
       propertyPath: m_Name
       value: DOOR (45)
@@ -461884,7 +461924,7 @@ PrefabInstance:
     - target: {fileID: 2973897600380449771, guid: 63813c8507f7c544da387b21f3aeee9c, type: 3}
       propertyPath: textElement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1987791572}
     - target: {fileID: 2973897600380449771, guid: 63813c8507f7c544da387b21f3aeee9c, type: 3}
       propertyPath: playOnlyOnce
       value: 1
