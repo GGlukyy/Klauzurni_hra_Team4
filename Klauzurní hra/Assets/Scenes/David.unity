@@ -4457,15 +4457,15 @@ RectTransform:
   m_GameObject: {fileID: 33892457}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 200022028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 49.999966}
-  m_SizeDelta: {x: 1000, y: 50}
+  m_AnchoredPosition: {x: -7.24, y: 91.8}
+  m_SizeDelta: {x: 1000, y: 60}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &36027058
 GameObject:
@@ -144911,7 +144911,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
   textElement: {fileID: 33892458}
-  sentence: lol funguje to!
+  sentence: 'HOLY
+
+    These gates are gigantic. There''s probably a way out of here
+    behind them. I need to find a way to open them. The key to opening them is probably
+    somewhere around here.'
   typingSpeed: 0.05
   clearDelay: 2
   playOnlyOnce: 1
@@ -144946,7 +144950,7 @@ Transform:
   m_GameObject: {fileID: 582197305}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.58225, y: 6.19, z: -9.316}
+  m_LocalPosition: {x: -62.323, y: 14.49, z: -9.316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -165566,6 +165570,79 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.000000082213305, w: 1}
   m_LocalPosition: {x: -239.9202, y: 15.240015, z: -4.01318}
   m_LocalScale: {x: 0.26138207, y: 1, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &645313350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645313353}
+  - component: {fileID: 645313352}
+  - component: {fileID: 645313351}
+  m_Layer: 0
+  m_Name: dialog trigger (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &645313351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645313350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e08ef8853a8824daa08511194f37cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
+  textElement: {fileID: 33892458}
+  sentence: This looks like a security guard's office, I think that button here could
+    open that gate.
+  typingSpeed: 0.05
+  clearDelay: 2
+  playOnlyOnce: 1
+  loopContinuously: 0
+--- !u!65 &645313352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645313350}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8834524, y: 3.4152422, z: 1.9124694}
+  m_Center: {x: 0.009231091, y: 1.2076211, z: 0.5015948}
+--- !u!4 &645313353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645313350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -85.7, y: 14.49, z: 3.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -228001,6 +228078,78 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 507550127}
   m_SourcePrefab: {fileID: 100100000, guid: 67547242ff52ae44992cf4b6b8d9aece, type: 3}
+--- !u!1 &934743161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 934743164}
+  - component: {fileID: 934743163}
+  - component: {fileID: 934743162}
+  m_Layer: 0
+  m_Name: dialog trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &934743162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934743161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e08ef8853a8824daa08511194f37cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
+  textElement: {fileID: 33892458}
+  sentence: This place feels odd
+  typingSpeed: 0.05
+  clearDelay: 2
+  playOnlyOnce: 1
+  loopContinuously: 0
+--- !u!65 &934743163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934743161}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4509573, y: 3.4152422, z: 9.758307}
+  m_Center: {x: 0.72547865, y: 1.2076211, z: 0.10806227}
+--- !u!4 &934743164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934743161}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -81.72, y: 14.49, z: -24.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &935979700
 Mesh:
   m_ObjectHideFlags: 0
@@ -396877,6 +397026,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884579770}
   m_Mesh: {fileID: 5080731651295093379, guid: 498063102d9332a4e9d25bfea2f37533, type: 3}
+--- !u!1 &1885893743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885893746}
+  - component: {fileID: 1885893745}
+  - component: {fileID: 1885893744}
+  m_Layer: 0
+  m_Name: dialog trigger (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1885893744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885893743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e08ef8853a8824daa08511194f37cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogue
+  textElement: {fileID: 33892458}
+  sentence: This button requires a key card to activate. I think i saw the guard
+    with a key card on his belt. I'll try to go through that tunnel and find him
+    there and steal the card from him. Genius plan
+  typingSpeed: 0.05
+  clearDelay: 2
+  playOnlyOnce: 1
+  loopContinuously: 0
+--- !u!65 &1885893745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885893743}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8834524, y: 3.4152422, z: 2.6017778}
+  m_Center: {x: 0.009231091, y: 1.2076211, z: 0.846249}
+--- !u!4 &1885893746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885893743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -85.7, y: 14.49, z: -3.77}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1888671902
 GameObject:
   m_ObjectHideFlags: 0
@@ -462151,7 +462374,7 @@ PrefabInstance:
     - target: {fileID: 2973897600380449771, guid: 63813c8507f7c544da387b21f3aeee9c, type: 3}
       propertyPath: textElement
       value: 
-      objectReference: {fileID: 1987791572}
+      objectReference: {fileID: 33892458}
     - target: {fileID: 2973897600380449771, guid: 63813c8507f7c544da387b21f3aeee9c, type: 3}
       propertyPath: playOnlyOnce
       value: 1
@@ -480769,3 +480992,6 @@ SceneRoots:
   - {fileID: 2074409319}
   - {fileID: 37956290}
   - {fileID: 582197308}
+  - {fileID: 934743164}
+  - {fileID: 645313353}
+  - {fileID: 1885893746}
