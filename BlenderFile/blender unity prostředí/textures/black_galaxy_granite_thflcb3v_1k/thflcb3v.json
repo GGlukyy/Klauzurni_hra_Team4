@@ -1,0 +1,496 @@
+{
+  "assetCategories": {
+    "surface": {
+      "stone": {
+        "granite": {}
+      }
+    }
+  },
+  "averageColor": "#3A3A3B",
+  "categories": [
+    "surface",
+    "stone",
+    "granite"
+  ],
+  "comp_version": 1,
+  "description": "",
+  "environment": {
+    "biome": "undefined",
+    "region": "undefined"
+  },
+  "highest_available_res": 8192,
+  "id": "thflcb3v",
+  "json": {
+    "contentLength": 10159,
+    "uri": "thflcb3v.json"
+  },
+  "maps": [
+    {
+      "averageColor": "#3A3A3B",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 363177681,
+      "maxIntensity": 126,
+      "mimeType": "image/x-exr",
+      "minIntensity": 37,
+      "name": "Basecolor",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "thflcb3v_8K_Basecolor.exr"
+    },
+    {
+      "averageColor": "#3A3A3B",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 47889089,
+      "maxIntensity": 126,
+      "mimeType": "image/jpeg",
+      "minIntensity": 37,
+      "name": "Basecolor",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "thflcb3v_8K_Basecolor.jpg"
+    },
+    {
+      "averageColor": "#FFFFFF",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 16245323,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 250,
+      "name": "Cavity",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "thflcb3v_8K_Cavity.exr"
+    },
+    {
+      "averageColor": "#FFFFFF",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 7515268,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 250,
+      "name": "Cavity",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "thflcb3v_8K_Cavity.jpg"
+    },
+    {
+      "averageColor": "#D4D4D4",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 152411030,
+      "maxIntensity": 219,
+      "mimeType": "image/x-exr",
+      "minIntensity": 197,
+      "name": "Gloss",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "thflcb3v_8K_Gloss.exr"
+    },
+    {
+      "averageColor": "#D4D4D4",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 18971478,
+      "maxIntensity": 219,
+      "mimeType": "image/jpeg",
+      "minIntensity": 197,
+      "name": "Gloss",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "thflcb3v_8K_Gloss.jpg"
+    },
+    {
+      "averageColor": "#8181FF",
+      "bitDepth": 16,
+      "colorSpace": "Linear",
+      "contentLength": 15275580,
+      "maxIntensity": 144,
+      "mimeType": "image/x-exr",
+      "minIntensity": 142,
+      "name": "Normal",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "thflcb3v_8K_Normal.exr"
+    },
+    {
+      "averageColor": "#8181FF",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 1003103,
+      "maxIntensity": 144,
+      "mimeType": "image/jpeg",
+      "minIntensity": 142,
+      "name": "Normal",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "thflcb3v_8K_Normal.jpg"
+    },
+    {
+      "averageColor": "#2B2B2B",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 167983725,
+      "maxIntensity": 58,
+      "mimeType": "image/x-exr",
+      "minIntensity": 36,
+      "name": "Roughness",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "thflcb3v_8K_Roughness.exr"
+    },
+    {
+      "averageColor": "#2B2B2B",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 20213446,
+      "maxIntensity": 58,
+      "mimeType": "image/jpeg",
+      "minIntensity": 36,
+      "name": "Roughness",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "thflcb3v_8K_Roughness.jpg"
+    },
+    {
+      "averageColor": "#393939",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 255155696,
+      "maxIntensity": 71,
+      "mimeType": "image/x-exr",
+      "minIntensity": 55,
+      "name": "Specular",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "thflcb3v_8K_Specular.exr"
+    },
+    {
+      "averageColor": "#393939",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 12158438,
+      "maxIntensity": 71,
+      "mimeType": "image/jpeg",
+      "minIntensity": 55,
+      "name": "Specular",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "thflcb3v_8K_Specular.jpg"
+    }
+  ],
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "2x2 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "20 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": true
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "4096 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "models": [],
+  "name": "Black Galaxy Granite",
+  "pack": {
+    "_id": "pristine-granite",
+    "name": "Pristine Granite"
+  },
+  "physicalSize": null,
+  "points": 2,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 235872,
+        "resolution": "360x360",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "thflcb3v_Grid_360.png"
+      },
+      {
+        "contentLength": 321033,
+        "resolution": "420x420",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "thflcb3v_Grid_420.png"
+      },
+      {
+        "contentLength": 979721,
+        "resolution": "720x720",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "thflcb3v_Grid_720.png"
+      },
+      {
+        "contentLength": 1349329,
+        "resolution": "840x840",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "thflcb3v_Grid_840.png"
+      },
+      {
+        "contentLength": 1750301,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "thflcb3v_PopupClay_1440.png"
+      },
+      {
+        "contentLength": 3226323,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "thflcb3v_PopupClay_1920.png"
+      },
+      {
+        "contentLength": 6815402,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "thflcb3v_PopupClay_2880.png"
+      },
+      {
+        "contentLength": 12246174,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "thflcb3v_PopupClay_3840.png"
+      },
+      {
+        "contentLength": 2578077,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "thflcb3v_PopupTiled_1440.png"
+      },
+      {
+        "contentLength": 4827830,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "thflcb3v_PopupTiled_1920.png"
+      },
+      {
+        "contentLength": 10358996,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "thflcb3v_PopupTiled_2880.png"
+      },
+      {
+        "contentLength": 20074354,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "thflcb3v_PopupTiled_3840.png"
+      },
+      {
+        "contentLength": 2603807,
+        "resolution": "1440x768",
+        "tags": [
+          "preview"
+        ],
+        "uri": "thflcb3v_Popup_1440.png"
+      },
+      {
+        "contentLength": 4903178,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview"
+        ],
+        "uri": "thflcb3v_Popup_1920.png"
+      },
+      {
+        "contentLength": 10576928,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "thflcb3v_Popup_2880.png"
+      },
+      {
+        "contentLength": 20870439,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "thflcb3v_Popup_3840.png"
+      }
+    ],
+    "relativeSize": "1x1",
+    "scaleReferences": []
+  },
+  "process_date": "2024-04-17 09:34:06",
+  "properties": [],
+  "referencePreviews": {
+    "maps": [],
+    "models": []
+  },
+  "references": [],
+  "revised": false,
+  "revision": 0,
+  "semanticTags": {
+    "3d_mesh": [],
+    "architectural_style": {},
+    "asset_type": "surface",
+    "contains": [
+      "granite"
+    ],
+    "descriptive": [
+      "smooth",
+      " shiny",
+      " polished",
+      " decorative"
+    ],
+    "environment": [
+      "urban"
+    ],
+    "industry": [
+      "archviz",
+      "games",
+      "VFX"
+    ],
+    "interior_exterior": [
+      "interior"
+    ],
+    "latin_name": [],
+    "locations": {
+      "Global": {
+        "Global": {}
+      }
+    },
+    "maxSize": 2,
+    "minSize": 2,
+    "name": "Black Galaxy Granite",
+    "orientation": [
+      "floor"
+    ],
+    "resolution": 8192,
+    "season": [],
+    "state": [
+      "new"
+    ],
+    "subject_matter": "manmade",
+    "theme": [
+      "interiors",
+      " counter-tops",
+      "interior design",
+      " bathroom",
+      " kitchen",
+      " washroom",
+      " decorative",
+      " ornate",
+      " house",
+      " office"
+    ]
+  },
+  "tags": [
+    "surface mix",
+    "black galaxy granite",
+    "black galaxy",
+    "black granite",
+    "granite",
+    "archviz"
+  ],
+  "texelDensity": 4096,
+  "texture_type": "basic",
+  "ue_plugin_archives": [
+    {
+      "contentLength": 132614649,
+      "gltfVersion": "2.0",
+      "tier": 0,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_0/thflcb3v_tier_0.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 42404448,
+      "gltfVersion": "2.0",
+      "tier": 1,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_1/thflcb3v_tier_1.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 12204742,
+      "gltfVersion": "2.0",
+      "tier": 2,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_2/thflcb3v_tier_2.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 951363,
+      "gltfVersion": "2.0",
+      "tier": 3,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_3/thflcb3v_tier_3.zip",
+      "version": 1
+    }
+  ],
+  "version": 2
+}

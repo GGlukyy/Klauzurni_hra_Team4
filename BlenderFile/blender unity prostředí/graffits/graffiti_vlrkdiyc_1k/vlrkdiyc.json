@@ -1,0 +1,381 @@
+{
+  "assetCategories": {
+    "decal": {
+      "graffiti": {}
+    }
+  },
+  "averageColor": "#000000",
+  "categories": [
+    "atlas",
+    "decals"
+  ],
+  "comp_version": 1,
+  "description": "",
+  "environment": {
+    "biome": "undefined",
+    "region": "Europe"
+  },
+  "highest_available_res": 16384,
+  "id": "vlrkdiyc",
+  "json": {
+    "contentLength": 7104,
+    "uri": "vlrkdiyc.json"
+  },
+  "maps": [
+    {
+      "averageColor": "#817D60",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 70865785,
+      "maxIntensity": 191,
+      "mimeType": "image/x-exr",
+      "minIntensity": 78,
+      "name": "Basecolor",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "basecolor",
+      "uri": "vlrkdiyc_8K_Basecolor.exr"
+    },
+    {
+      "averageColor": "#817D60",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 11401454,
+      "maxIntensity": 191,
+      "mimeType": "image/jpeg",
+      "minIntensity": 78,
+      "name": "Basecolor",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "basecolor",
+      "uri": "vlrkdiyc_8K_Basecolor.jpg"
+    },
+    {
+      "averageColor": "#C8C8C8",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 24746322,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Opacity",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "opacity",
+      "uri": "vlrkdiyc_8K_Opacity.exr"
+    },
+    {
+      "averageColor": "#C8C8C8",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 1793307,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Opacity",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "opacity",
+      "uri": "vlrkdiyc_8K_Opacity.jpg"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 16,
+      "colorSpace": "Linear",
+      "contentLength": 24660014,
+      "maxIntensity": 59,
+      "mimeType": "image/x-exr",
+      "minIntensity": 52,
+      "name": "Specular",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "specular",
+      "uri": "vlrkdiyc_8K_Specular.exr"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 1267097,
+      "maxIntensity": 59,
+      "mimeType": "image/jpeg",
+      "minIntensity": 52,
+      "name": "Specular",
+      "physicalSize": "4x2",
+      "resolution": "8192x4096",
+      "type": "specular",
+      "uri": "vlrkdiyc_8K_Specular.jpg"
+    }
+  ],
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "4x2 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "0 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": false
+    },
+    {
+      "key": "tiling_directions",
+      "name": "Tiling Directions",
+      "value": []
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "8192 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "models": [],
+  "name": "Graffiti",
+  "pack": {
+    "_id": "graffiti",
+    "name": "Graffiti"
+  },
+  "physicalSize": null,
+  "points": 1,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 233369,
+        "resolution": "360x360",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vlrkdiyc_Grid_360.png"
+      },
+      {
+        "contentLength": 310976,
+        "resolution": "420x420",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vlrkdiyc_Grid_420.png"
+      },
+      {
+        "contentLength": 864739,
+        "resolution": "720x720",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_Grid_720.png"
+      },
+      {
+        "contentLength": 1159061,
+        "resolution": "840x840",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_Grid_840.png"
+      },
+      {
+        "contentLength": 1670880,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vlrkdiyc_PopupClay_1440.png"
+      },
+      {
+        "contentLength": 3065489,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vlrkdiyc_PopupClay_1920.png"
+      },
+      {
+        "contentLength": 6410931,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_PopupClay_2880.png"
+      },
+      {
+        "contentLength": 11081940,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_PopupClay_3840.png"
+      },
+      {
+        "contentLength": 2193640,
+        "resolution": "1440x768",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vlrkdiyc_Popup_1440.png"
+      },
+      {
+        "contentLength": 4062316,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vlrkdiyc_Popup_1920.png"
+      },
+      {
+        "contentLength": 8372721,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_Popup_2880.png"
+      },
+      {
+        "contentLength": 15715311,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vlrkdiyc_Popup_3840.png"
+      }
+    ],
+    "relativeSize": "1x1",
+    "scaleReferences": []
+  },
+  "process_date": "2024-04-16 21:12:16",
+  "properties": [],
+  "referencePreviews": {
+    "maps": [],
+    "models": []
+  },
+  "references": [],
+  "revised": false,
+  "revision": 0,
+  "semanticTags": {
+    "asset_type": "decal",
+    "color": [
+      "Green",
+      "Orange",
+      "Blue"
+    ],
+    "contains": [
+      "graffiti",
+      "spray",
+      "paint",
+      "piece"
+    ],
+    "country": "Sweden",
+    "descriptive": [
+      "painted",
+      "tagged",
+      "sprayed",
+      "art"
+    ],
+    "environment": [
+      "urban"
+    ],
+    "industry": [
+      "archviz",
+      "games",
+      "VFX"
+    ],
+    "interior_exterior": [
+      "exterior"
+    ],
+    "locations": {
+      "Europe": {
+        "Sweden": {}
+      }
+    },
+    "maxSize": 4,
+    "minSize": 2,
+    "name": "Graffiti",
+    "orientation": [
+      "wall"
+    ],
+    "region": "Europe",
+    "state": [
+      "new"
+    ],
+    "subject_matter": "manmade",
+    "theme": [
+      "streets",
+      "walls",
+      "urban",
+      "alleys",
+      "sub-urban",
+      "vandalism",
+      "trains",
+      "subways"
+    ]
+  },
+  "tags": [
+    "decal",
+    "green",
+    "orange",
+    "blue",
+    "graffiti",
+    "tag",
+    "street",
+    "art"
+  ],
+  "texelDensity": 4096,
+  "texture_type": "basic",
+  "ue_plugin_archives": [
+    {
+      "contentLength": 38657459,
+      "gltfVersion": "2.0",
+      "tier": 0,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_0/vlrkdiyc_tier_0.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 11212564,
+      "gltfVersion": "2.0",
+      "tier": 1,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_1/vlrkdiyc_tier_1.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 3053370,
+      "gltfVersion": "2.0",
+      "tier": 2,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_2/vlrkdiyc_tier_2.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 837946,
+      "gltfVersion": "2.0",
+      "tier": 3,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_3/vlrkdiyc_tier_3.zip",
+      "version": 1
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,388 @@
+{
+  "assetCategories": {
+    "decal": {
+      "graffiti": {}
+    }
+  },
+  "averageColor": "#000000",
+  "categories": [
+    "atlas",
+    "decals"
+  ],
+  "comp_version": 1,
+  "description": "",
+  "environment": {
+    "biome": "undefined",
+    "region": "Europe"
+  },
+  "highest_available_res": 8192,
+  "id": "vcqhadvl",
+  "json": {
+    "contentLength": 7265,
+    "uri": "vcqhadvl.json"
+  },
+  "maps": [
+    {
+      "averageColor": "#BEBBB6",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 26549451,
+      "maxIntensity": 188,
+      "mimeType": "image/x-exr",
+      "minIntensity": 184,
+      "name": "Basecolor",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "basecolor",
+      "uri": "vcqhadvl_8K_Basecolor.exr"
+    },
+    {
+      "averageColor": "#BEBBB6",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 2000074,
+      "maxIntensity": 188,
+      "mimeType": "image/jpeg",
+      "minIntensity": 184,
+      "name": "Basecolor",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "basecolor",
+      "uri": "vcqhadvl_8K_Basecolor.jpg"
+    },
+    {
+      "averageColor": "#262626",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 32544130,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Opacity",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "opacity",
+      "uri": "vcqhadvl_8K_Opacity.exr"
+    },
+    {
+      "averageColor": "#262626",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 12460581,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Opacity",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "opacity",
+      "uri": "vcqhadvl_8K_Opacity.jpg"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 16,
+      "colorSpace": "Linear",
+      "contentLength": 29074756,
+      "maxIntensity": 58,
+      "mimeType": "image/x-exr",
+      "minIntensity": 55,
+      "name": "Specular",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "specular",
+      "uri": "vcqhadvl_8K_Specular.exr"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 2583800,
+      "maxIntensity": 58,
+      "mimeType": "image/jpeg",
+      "minIntensity": 55,
+      "name": "Specular",
+      "physicalSize": "2x1",
+      "resolution": "8192x4096",
+      "type": "specular",
+      "uri": "vcqhadvl_8K_Specular.jpg"
+    }
+  ],
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "2x1 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "0 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": false
+    },
+    {
+      "key": "tiling_directions",
+      "name": "Tiling Directions",
+      "value": []
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "4096 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "models": [],
+  "name": "Graffiti Tag",
+  "pack": {
+    "_id": "graffiti",
+    "name": "Graffiti"
+  },
+  "physicalSize": null,
+  "points": 1,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 155326,
+        "resolution": "360x360",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vcqhadvl_Grid_360.png"
+      },
+      {
+        "contentLength": 206458,
+        "resolution": "420x420",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vcqhadvl_Grid_420.png"
+      },
+      {
+        "contentLength": 559471,
+        "resolution": "720x720",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vcqhadvl_Grid_720.png"
+      },
+      {
+        "contentLength": 742555,
+        "resolution": "840x840",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vcqhadvl_Grid_840.png"
+      },
+      {
+        "contentLength": 1674790,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vcqhadvl_PopupClay_1440.png"
+      },
+      {
+        "contentLength": 3061144,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vcqhadvl_PopupClay_1920.png"
+      },
+      {
+        "contentLength": 6408062,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vcqhadvl_PopupClay_2880.png"
+      },
+      {
+        "contentLength": 11086591,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vcqhadvl_PopupClay_3840.png"
+      },
+      {
+        "contentLength": 1828288,
+        "resolution": "1440x768",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vcqhadvl_Popup_1440.png"
+      },
+      {
+        "contentLength": 3416405,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vcqhadvl_Popup_1920.png"
+      },
+      {
+        "contentLength": 7186346,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vcqhadvl_Popup_2880.png"
+      },
+      {
+        "contentLength": 13435318,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vcqhadvl_Popup_3840.png"
+      }
+    ],
+    "relativeSize": "1x1",
+    "scaleReferences": []
+  },
+  "process_date": "2024-04-17 00:04:28",
+  "properties": [],
+  "referencePreviews": {
+    "maps": [],
+    "models": []
+  },
+  "references": [],
+  "revised": false,
+  "revision": 0,
+  "semanticTags": {
+    "architectural_style": {},
+    "asset_type": "decal",
+    "color": [
+      "Gray",
+      "White"
+    ],
+    "contains": [
+      "Graffiti",
+      "Spray",
+      "Paint",
+      "Markers",
+      "Ink"
+    ],
+    "country": "Sweden",
+    "descriptive": [
+      "painted",
+      "tagged",
+      "sprayed",
+      "Art"
+    ],
+    "environment": [
+      "urban"
+    ],
+    "industry": [
+      "archviz",
+      "games",
+      "VFX"
+    ],
+    "interior_exterior": [
+      "exterior"
+    ],
+    "locations": {
+      "Europe": {
+        "Sweden": {}
+      }
+    },
+    "maxSize": 2,
+    "minSize": 1,
+    "name": "Graffiti Tag",
+    "orientation": [
+      "wall"
+    ],
+    "region": "Europe",
+    "resolution": 8192,
+    "state": [
+      "new"
+    ],
+    "subject_matter": "manmade",
+    "theme": [
+      "Streets",
+      "walls",
+      "urban",
+      "Rural",
+      "Alleys",
+      "Art",
+      "Mural",
+      "sub-urban",
+      "parking lots",
+      "abandoned areas",
+      "defacement",
+      "vandalism",
+      "trains",
+      "subways"
+    ]
+  },
+  "tags": [
+    "decal",
+    "gray",
+    "graffiti",
+    "spray",
+    "paint",
+    "markers",
+    "ink"
+  ],
+  "texelDensity": 4096,
+  "texture_type": "basic",
+  "ue_plugin_archives": [
+    {
+      "contentLength": 23409814,
+      "gltfVersion": "2.0",
+      "tier": 0,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_0/vcqhadvl_tier_0.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 6910765,
+      "gltfVersion": "2.0",
+      "tier": 1,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_1/vcqhadvl_tier_1.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 1815104,
+      "gltfVersion": "2.0",
+      "tier": 2,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_2/vcqhadvl_tier_2.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 435667,
+      "gltfVersion": "2.0",
+      "tier": 3,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_3/vcqhadvl_tier_3.zip",
+      "version": 1
+    }
+  ],
+  "version": 2
+}
