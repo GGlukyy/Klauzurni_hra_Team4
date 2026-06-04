@@ -4,6 +4,9 @@ using UnityEngine.Playables;
 public class CardScanner : MonoBehaviour
 {
     [Header("Nastavení Terminálu")]
+    [Tooltip("Vyžaduje tento terminál vůbec nějakou kartu? Pokud ne, otevře se rovnou.")]
+    public bool requiresCard = true;
+
     [Tooltip("Přesný název předmětu (karty), který otevírá tyto dveře")]
     public string requiredCardName = "Level1_Keycard";
 
@@ -20,9 +23,14 @@ public class CardScanner : MonoBehaviour
     {
         if (isAlreadyScanned) return false;
 
-        if (itemNameInHand == requiredCardName)
+        // Propustí hráče buď pokud karta není potřeba, nebo má tu správnou
+        if (!requiresCard || itemNameInHand == requiredCardName)
         {
-            Debug.Log("Karta přijata! Spouští se otevření dveří.");
+            if (!requiresCard)
+                Debug.Log("Karta není vyžadována. Spouští se otevření dveří.");
+            else
+                Debug.Log("Karta přijata! Spouští se otevření dveří.");
+
             isAlreadyScanned = true;
 
             if (doorCutscene != null)
@@ -30,12 +38,12 @@ public class CardScanner : MonoBehaviour
                 doorCutscene.Play();
             }
 
-            return true; // Vrátí true -> karta byla v pořádku
+            return true; // Vrátí true -> úspěch
         }
         else
         {
             Debug.Log("Přístup odepřen: Nemáš správnou kartu.");
-            return false; // Vrátí false -> špatná karta
+            return false; // Vrátí false -> špatná karta nebo prázdné ruce
         }
     }
 }
