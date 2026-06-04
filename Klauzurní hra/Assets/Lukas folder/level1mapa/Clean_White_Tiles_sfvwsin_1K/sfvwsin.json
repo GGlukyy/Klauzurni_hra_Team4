@@ -1,0 +1,556 @@
+{
+  "assetCategories": {
+    "surface": {
+      "tile": {
+        "ceramic": {}
+      }
+    }
+  },
+  "averageColor": "#D4CCC4",
+  "categories": [
+    "surface",
+    "Floors",
+    "Tiles"
+  ],
+  "comp_version": 1,
+  "description": "",
+  "displacementBias": 0.791287,
+  "displacementCalibrationAccuracy": 0.998797,
+  "displacementScale": 0.271304,
+  "environment": {
+    "biome": "undefined",
+    "region": "undefined"
+  },
+  "highest_available_res": 16384,
+  "id": "sfvwsin",
+  "json": {
+    "contentLength": 11602,
+    "uri": "sfvwsin.json"
+  },
+  "maps": [
+    {
+      "averageColor": "#F7F7F7",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 191004354,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 213,
+      "name": "AO",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "ao",
+      "uri": "sfvwsin_8K_AO.exr"
+    },
+    {
+      "averageColor": "#F7F7F7",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 14469143,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 213,
+      "name": "AO",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "ao",
+      "uri": "sfvwsin_8K_AO.jpg"
+    },
+    {
+      "averageColor": "#D4CCC4",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 159743034,
+      "maxIntensity": 217,
+      "mimeType": "image/x-exr",
+      "minIntensity": 150,
+      "name": "Basecolor",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "sfvwsin_8K_Basecolor.exr"
+    },
+    {
+      "averageColor": "#D4CCC4",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 19028949,
+      "maxIntensity": 217,
+      "mimeType": "image/jpeg",
+      "minIntensity": 150,
+      "name": "Basecolor",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "sfvwsin_8K_Basecolor.jpg"
+    },
+    {
+      "averageColor": "#808080",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 207683433,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Bump",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "bump",
+      "uri": "sfvwsin_8K_Bump.exr"
+    },
+    {
+      "averageColor": "#808080",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 27929192,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Bump",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "bump",
+      "uri": "sfvwsin_8K_Bump.jpg"
+    },
+    {
+      "averageColor": "#BABABA",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 195107023,
+      "maxIntensity": 204,
+      "mimeType": "image/x-exr",
+      "minIntensity": 138,
+      "name": "Cavity",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "sfvwsin_8K_Cavity.exr"
+    },
+    {
+      "averageColor": "#BABABA",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 19442815,
+      "maxIntensity": 204,
+      "mimeType": "image/jpeg",
+      "minIntensity": 138,
+      "name": "Cavity",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "sfvwsin_8K_Cavity.jpg"
+    },
+    {
+      "averageColor": "#1C1C1C",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 219679563,
+      "maxIntensity": 49,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Gloss",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "sfvwsin_8K_Gloss.exr"
+    },
+    {
+      "averageColor": "#1C1C1C",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 26257109,
+      "maxIntensity": 49,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Gloss",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "sfvwsin_8K_Gloss.jpg"
+    },
+    {
+      "averageColor": "#8180FF",
+      "bitDepth": 16,
+      "colorSpace": "Linear",
+      "contentLength": 112522618,
+      "maxIntensity": 169,
+      "mimeType": "image/x-exr",
+      "minIntensity": 115,
+      "name": "Normal",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "sfvwsin_8K_Normal.exr"
+    },
+    {
+      "averageColor": "#8180FF",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 24472274,
+      "maxIntensity": 169,
+      "mimeType": "image/jpeg",
+      "minIntensity": 115,
+      "name": "Normal",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "sfvwsin_8K_Normal.jpg"
+    },
+    {
+      "averageColor": "#E3E3E3",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 199877852,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 206,
+      "name": "Roughness",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "sfvwsin_8K_Roughness.exr"
+    },
+    {
+      "averageColor": "#E3E3E3",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 24403067,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 206,
+      "name": "Roughness",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "sfvwsin_8K_Roughness.jpg"
+    },
+    {
+      "averageColor": "#282828",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 164401734,
+      "maxIntensity": 30.36,
+      "mimeType": "image/x-exr",
+      "minIntensity": 44.88,
+      "name": "Specular",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "sfvwsin_8K_Specular.exr"
+    },
+    {
+      "averageColor": "#282828",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 8789419,
+      "maxIntensity": 30.36,
+      "mimeType": "image/jpeg",
+      "minIntensity": 44.88,
+      "name": "Specular",
+      "physicalSize": "2x2",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "sfvwsin_8K_Specular.jpg"
+    }
+  ],
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "2x2 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "0.01 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": true
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "8192 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "models": [],
+  "name": "Clean White Tiles",
+  "pack": {
+    "_id": "clean-interior-tiles",
+    "name": "Clean Interior Tiles"
+  },
+  "physicalSize": null,
+  "points": 2,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 160956,
+        "resolution": "360x360",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "sfvwsin_Grid_360.png"
+      },
+      {
+        "contentLength": 215431,
+        "resolution": "420x420",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "sfvwsin_Grid_420.png"
+      },
+      {
+        "contentLength": 608268,
+        "resolution": "720x720",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "sfvwsin_Grid_720.png"
+      },
+      {
+        "contentLength": 819874,
+        "resolution": "840x840",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "sfvwsin_Grid_840.png"
+      },
+      {
+        "contentLength": 1918907,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "sfvwsin_PopupClay_1440.png"
+      },
+      {
+        "contentLength": 3527714,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "sfvwsin_PopupClay_1920.png"
+      },
+      {
+        "contentLength": 7467578,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "sfvwsin_PopupClay_2880.png"
+      },
+      {
+        "contentLength": 13797922,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "sfvwsin_PopupClay_3840.png"
+      },
+      {
+        "contentLength": 1937757,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "sfvwsin_PopupTiled_1440.png"
+      },
+      {
+        "contentLength": 3511278,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "sfvwsin_PopupTiled_1920.png"
+      },
+      {
+        "contentLength": 7341475,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "sfvwsin_PopupTiled_2880.png"
+      },
+      {
+        "contentLength": 13540088,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "sfvwsin_PopupTiled_3840.png"
+      },
+      {
+        "contentLength": 1872439,
+        "resolution": "1440x768",
+        "tags": [
+          "preview"
+        ],
+        "uri": "sfvwsin_Popup_1440.png"
+      },
+      {
+        "contentLength": 3415922,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview"
+        ],
+        "uri": "sfvwsin_Popup_1920.png"
+      },
+      {
+        "contentLength": 7228920,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "sfvwsin_Popup_2880.png"
+      },
+      {
+        "contentLength": 13388503,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "sfvwsin_Popup_3840.png"
+      }
+    ],
+    "relativeSize": "1x1",
+    "scaleReferences": []
+  },
+  "process_date": "2024-04-17 16:44:29",
+  "properties": [],
+  "referencePreviews": {
+    "maps": [],
+    "models": []
+  },
+  "references": [],
+  "revised": false,
+  "semanticTags": {
+    "architectural_style": {},
+    "asset_type": "surface",
+    "color": [
+      "gray",
+      "colorless",
+      "faint",
+      "desaturated",
+      "faded",
+      "white"
+    ],
+    "contains": [
+      "tiles"
+    ],
+    "environment": [
+      "urban"
+    ],
+    "industry": [
+      "archviz",
+      "games",
+      "VFX"
+    ],
+    "interior_exterior": [
+      "interior"
+    ],
+    "latin_name": [],
+    "locations": {
+      "Global": {
+        "Global": {}
+      }
+    },
+    "maxSize": 2,
+    "minSize": 2,
+    "name": "Clean White Tiles",
+    "orientation": [
+      "floor"
+    ],
+    "resolution": 16384,
+    "season": [],
+    "state": [
+      "new"
+    ],
+    "subject_matter": "manmade",
+    "theme": [
+      "ceramic",
+      " patterned",
+      " decorative",
+      " clean"
+    ]
+  },
+  "tags": [
+    "white",
+    "square",
+    "plain",
+    "smooth",
+    "desaturated",
+    "grey",
+    "colorless",
+    "faded",
+    "faint",
+    "gray",
+    "bright",
+    "clear",
+    "archviz"
+  ],
+  "texelDensity": 8192,
+  "texture_type": "basic",
+  "ue_plugin_archives": [
+    {
+      "contentLength": 192587083,
+      "gltfVersion": "2.0",
+      "tier": 0,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_0/sfvwsin_tier_0.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 50458492,
+      "gltfVersion": "2.0",
+      "tier": 1,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_1/sfvwsin_tier_1.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 12322324,
+      "gltfVersion": "2.0",
+      "tier": 2,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_2/sfvwsin_tier_2.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 646180,
+      "gltfVersion": "2.0",
+      "tier": 3,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_3/sfvwsin_tier_3.zip",
+      "version": 1
+    }
+  ],
+  "version": 2
+}
