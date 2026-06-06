@@ -161,31 +161,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.6488572
+      value: -0.69196606
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.72942984
+      value: 0.6888696
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.12196034
+      value: -0.13694933
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.17900339
+      value: 0.16699284
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -115.454
+      value: -114.823
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -77.38202
+      value: -91.83002
       objectReference: {fileID: 0}
     - target: {fileID: 5693072375517064013, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -287.357
+      value: -270.663
       objectReference: {fileID: 0}
     - target: {fileID: 5745449657615329598, guid: eb4ab8fa97a2fc64ea684cac2e060bad, type: 3}
       propertyPath: m_Mesh
@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 35049612}
   - component: {fileID: 35049614}
   - component: {fileID: 35049613}
+  - component: {fileID: 35049615}
   m_Layer: 0
   m_Name: tall_bush_3 (1)
   m_TagString: Untagged
@@ -591,7 +592,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35049611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -640,6 +641,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35049611}
   m_Mesh: {fileID: 2928287017427330194, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &35049615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35049611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &43708438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7443,6 +7460,7 @@ GameObject:
   - component: {fileID: 236529569}
   - component: {fileID: 236529571}
   - component: {fileID: 236529570}
+  - component: {fileID: 236529572}
   m_Layer: 0
   m_Name: Medium_bush_2 (12)
   m_TagString: Untagged
@@ -7472,7 +7490,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236529568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7521,6 +7539,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236529568}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &236529572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236529568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &248707937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,6 +7566,7 @@ GameObject:
   - component: {fileID: 248707938}
   - component: {fileID: 248707940}
   - component: {fileID: 248707939}
+  - component: {fileID: 248707941}
   m_Layer: 0
   m_Name: Medium_bush_2 (11)
   m_TagString: Untagged
@@ -7561,7 +7596,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248707937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -7610,6 +7645,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248707937}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &248707941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248707937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &257688414
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,6 +8205,8 @@ GameObject:
   - component: {fileID: 275643700}
   - component: {fileID: 275643702}
   - component: {fileID: 275643701}
+  - component: {fileID: 275643703}
+  - component: {fileID: 275643704}
   m_Layer: 0
   m_Name: Medium_bush_2 (10)
   m_TagString: Untagged
@@ -8183,7 +8236,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275643699}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8232,6 +8285,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275643699}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &275643703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275643699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!114 &275643704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275643699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 2
+  windScale: 0.5
+  windStrength: 0.2
+  individuality: 0.15
 --- !u!1 &275966592
 GameObject:
   m_ObjectHideFlags: 0
@@ -9042,6 +9127,7 @@ GameObject:
   - component: {fileID: 349825278}
   - component: {fileID: 349825280}
   - component: {fileID: 349825279}
+  - component: {fileID: 349825281}
   m_Layer: 0
   m_Name: Medium_bush_2 (2)
   m_TagString: Untagged
@@ -9071,7 +9157,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349825277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9120,6 +9206,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349825277}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &349825281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349825277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &376285854
 GameObject:
   m_ObjectHideFlags: 0
@@ -11537,6 +11639,8 @@ GameObject:
   - component: {fileID: 463257110}
   - component: {fileID: 463257112}
   - component: {fileID: 463257111}
+  - component: {fileID: 463257113}
+  - component: {fileID: 463257114}
   m_Layer: 0
   m_Name: Medium_bush_2 (9)
   m_TagString: Untagged
@@ -11566,7 +11670,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463257109}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11615,6 +11719,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463257109}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &463257113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463257109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!114 &463257114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463257109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 2
+  windScale: 0.5
+  windStrength: 0.2
+  individuality: 0.15
 --- !u!1 &465362166
 GameObject:
   m_ObjectHideFlags: 0
@@ -12078,6 +12214,7 @@ GameObject:
   - component: {fileID: 513981201}
   - component: {fileID: 513981203}
   - component: {fileID: 513981202}
+  - component: {fileID: 513981204}
   m_Layer: 0
   m_Name: tall_bush_1 (1)
   m_TagString: Untagged
@@ -12107,7 +12244,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513981200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12156,6 +12293,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513981200}
   m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &513981204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513981200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &536678374
 GameObject:
   m_ObjectHideFlags: 0
@@ -12300,6 +12453,8 @@ GameObject:
   - component: {fileID: 545894063}
   - component: {fileID: 545894065}
   - component: {fileID: 545894064}
+  - component: {fileID: 545894066}
+  - component: {fileID: 545894067}
   m_Layer: 0
   m_Name: Medium_bush_2 (16)
   m_TagString: Untagged
@@ -12329,7 +12484,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545894062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12378,6 +12533,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545894062}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &545894066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545894062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!114 &545894067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545894062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 2
+  windScale: 0.5
+  windStrength: 0.2
+  individuality: 0.15
 --- !u!43 &547776210
 Mesh:
   m_ObjectHideFlags: 0
@@ -12556,6 +12743,27 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &550267661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7709261663865788122, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+  m_PrefabInstance: {fileID: 609886892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &550267665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550267661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &566862036
 GameObject:
   m_ObjectHideFlags: 0
@@ -12567,6 +12775,7 @@ GameObject:
   - component: {fileID: 566862037}
   - component: {fileID: 566862039}
   - component: {fileID: 566862038}
+  - component: {fileID: 566862040}
   m_Layer: 0
   m_Name: tall_bush_1 (5)
   m_TagString: Untagged
@@ -12596,7 +12805,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566862036}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -12645,6 +12854,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566862036}
   m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &566862040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566862036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &575422579
 GameObject:
   m_ObjectHideFlags: 0
@@ -13610,9 +13835,17 @@ PrefabInstance:
       value: 1.536
       objectReference: {fileID: 0}
     - target: {fileID: -319448595259965156, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -319448595259965156, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+    - target: {fileID: -208036547471508941, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -208036547471508941, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13630,9 +13863,17 @@ PrefabInstance:
       value: 2.222
       objectReference: {fileID: 0}
     - target: {fileID: 234109672104360824, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 234109672104360824, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+    - target: {fileID: 341021417066378360, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 341021417066378360, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -13742,33 +13983,45 @@ PrefabInstance:
       addedObject: {fileID: 637588371}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: 10
-      addedObject: {fileID: 1087976348}
+      addedObject: {fileID: 886880422}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: 11
-      addedObject: {fileID: 463257110}
+      addedObject: {fileID: 1161993574}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: 12
-      addedObject: {fileID: 275643700}
+      addedObject: {fileID: 1087976348}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: 13
-      addedObject: {fileID: 1774321606}
+      addedObject: {fileID: 463257110}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: 14
+      addedObject: {fileID: 275643700}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: 15
+      addedObject: {fileID: 1774321606}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: 16
       addedObject: {fileID: 349825278}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
-      insertIndex: 17
+      insertIndex: 19
       addedObject: {fileID: 513981201}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
-      insertIndex: 18
+      insertIndex: 20
       addedObject: {fileID: 1912695429}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
-      insertIndex: 19
+      insertIndex: 21
+      addedObject: {fileID: 2072983737}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: 22
+      addedObject: {fileID: 1807067919}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: 23
       addedObject: {fileID: 1185376340}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
-      insertIndex: 20
+      insertIndex: 24
       addedObject: {fileID: 1702752649}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
-      insertIndex: 21
+      insertIndex: 25
       addedObject: {fileID: 566862037}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: -1
@@ -13776,7 +14029,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1243425945}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4914149171925772761, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1958415428}
+    - targetCorrespondingSourceObject: {fileID: 6368640651214525890, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2099427303}
+    - targetCorrespondingSourceObject: {fileID: -4604183418622394699, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 695639345}
+    - targetCorrespondingSourceObject: {fileID: -7709261663865788122, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 550267665}
   m_SourcePrefab: {fileID: 100100000, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
 --- !u!4 &609886893 stripped
 Transform:
@@ -14454,6 +14719,7 @@ GameObject:
   - component: {fileID: 637588371}
   - component: {fileID: 637588373}
   - component: {fileID: 637588372}
+  - component: {fileID: 637588374}
   m_Layer: 0
   m_Name: Medium_bush_2 (7)
   m_TagString: Untagged
@@ -14483,7 +14749,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637588370}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14532,6 +14798,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637588370}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &637588374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637588370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &654935903
 GameObject:
   m_ObjectHideFlags: 0
@@ -14670,6 +14952,7 @@ GameObject:
   - component: {fileID: 669599545}
   - component: {fileID: 669599547}
   - component: {fileID: 669599546}
+  - component: {fileID: 669599548}
   m_Layer: 0
   m_Name: Medium_bush_2 (14)
   m_TagString: Untagged
@@ -14699,7 +14982,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669599544}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14748,6 +15031,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669599544}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &669599548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669599544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!43 &669845222
 Mesh:
   m_ObjectHideFlags: 0
@@ -17092,6 +17391,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &695639341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4604183418622394699, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+  m_PrefabInstance: {fileID: 609886892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &695639345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695639341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &722456620
 GameObject:
   m_ObjectHideFlags: 0
@@ -20163,6 +20483,7 @@ GameObject:
   - component: {fileID: 774241718}
   - component: {fileID: 774241720}
   - component: {fileID: 774241719}
+  - component: {fileID: 774241721}
   m_Layer: 0
   m_Name: Medium_bush_2 (13)
   m_TagString: Untagged
@@ -20192,7 +20513,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774241717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -20241,6 +20562,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774241717}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &774241721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774241717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &791520918
 GameObject:
   m_ObjectHideFlags: 0
@@ -37647,6 +37984,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &886880421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886880422}
+  - component: {fileID: 886880425}
+  - component: {fileID: 886880424}
+  - component: {fileID: 886880423}
+  m_Layer: 0
+  m_Name: Medium_bush_2 (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &886880422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886880421}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 7.632, y: -1.883, z: 10.347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 609886893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &886880423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886880421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!23 &886880424
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886880421}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &886880425
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886880421}
+  m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
 --- !u!1 &896697814
 GameObject:
   m_ObjectHideFlags: 0
@@ -40640,6 +41083,7 @@ GameObject:
   - component: {fileID: 1087976348}
   - component: {fileID: 1087976350}
   - component: {fileID: 1087976349}
+  - component: {fileID: 1087976351}
   m_Layer: 0
   m_Name: Medium_bush_2 (8)
   m_TagString: Untagged
@@ -40669,7 +41113,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087976347}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -40718,6 +41162,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087976347}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1087976351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087976347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!43 &1099973973
 Mesh:
   m_ObjectHideFlags: 0
@@ -43042,6 +43502,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1161993573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161993574}
+  - component: {fileID: 1161993577}
+  - component: {fileID: 1161993576}
+  - component: {fileID: 1161993575}
+  m_Layer: 0
+  m_Name: Medium_bush_2 (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1161993574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161993573}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.088, y: -1.973, z: 9.671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 609886893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161993575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161993573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!23 &1161993576
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161993573}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1161993577
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161993573}
+  m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
 --- !u!1001 &1176097398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43110,6 +43676,8 @@ GameObject:
   - component: {fileID: 1185376340}
   - component: {fileID: 1185376342}
   - component: {fileID: 1185376341}
+  - component: {fileID: 1185376343}
+  - component: {fileID: 1185376344}
   m_Layer: 0
   m_Name: tall_bush_1 (3)
   m_TagString: Untagged
@@ -43139,7 +43707,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185376339}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -43188,6 +43756,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185376339}
   m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1185376343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185376339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!114 &1185376344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185376339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 2
+  windScale: 0.5
+  windStrength: 0.2
+  individuality: 0.15
 --- !u!1001 &1187368640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45205,6 +45805,7 @@ GameObject:
   - component: {fileID: 1243425945}
   - component: {fileID: 1243425947}
   - component: {fileID: 1243425946}
+  - component: {fileID: 1243425948}
   m_Layer: 0
   m_Name: tall_bush_3 (2)
   m_TagString: Untagged
@@ -45234,7 +45835,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243425944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -45283,6 +45884,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243425944}
   m_Mesh: {fileID: 2928287017427330194, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1243425948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243425944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &1252136026
 GameObject:
   m_ObjectHideFlags: 0
@@ -50192,6 +50809,7 @@ GameObject:
   - component: {fileID: 1509631493}
   - component: {fileID: 1509631495}
   - component: {fileID: 1509631494}
+  - component: {fileID: 1509631496}
   m_Layer: 0
   m_Name: Medium_bush_2 (15)
   m_TagString: Untagged
@@ -50221,7 +50839,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509631492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -50270,6 +50888,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509631492}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1509631496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509631492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1001 &1510020597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51371,6 +52005,7 @@ GameObject:
   - component: {fileID: 1646668954}
   - component: {fileID: 1646668956}
   - component: {fileID: 1646668955}
+  - component: {fileID: 1646668957}
   m_Layer: 0
   m_Name: Medium_bush_2 (5)
   m_TagString: Untagged
@@ -51400,7 +52035,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646668953}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -51449,6 +52084,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646668953}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1646668957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646668953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &1660727723
 GameObject:
   m_ObjectHideFlags: 0
@@ -52297,6 +52948,7 @@ GameObject:
   - component: {fileID: 1676655877}
   - component: {fileID: 1676655879}
   - component: {fileID: 1676655878}
+  - component: {fileID: 1676655880}
   m_Layer: 0
   m_Name: Medium_bush_2 (6)
   m_TagString: Untagged
@@ -52326,7 +52978,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676655876}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52375,6 +53027,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676655876}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1676655880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676655876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!43 &1692954786
 Mesh:
   m_ObjectHideFlags: 0
@@ -52653,6 +53321,7 @@ GameObject:
   - component: {fileID: 1702752649}
   - component: {fileID: 1702752651}
   - component: {fileID: 1702752650}
+  - component: {fileID: 1702752652}
   m_Layer: 0
   m_Name: tall_bush_1 (4)
   m_TagString: Untagged
@@ -52682,7 +53351,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702752648}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -52731,6 +53400,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702752648}
   m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1702752652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702752648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &1736640638
 GameObject:
   m_ObjectHideFlags: 0
@@ -54884,6 +55569,7 @@ GameObject:
   - component: {fileID: 1774321606}
   - component: {fileID: 1774321608}
   - component: {fileID: 1774321607}
+  - component: {fileID: 1774321609}
   m_Layer: 0
   m_Name: Medium_bush_2 (1)
   m_TagString: Untagged
@@ -54913,7 +55599,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774321605}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -54962,6 +55648,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774321605}
   m_Mesh: {fileID: -2548211315460335199, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1774321609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774321605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &1807001642
 GameObject:
   m_ObjectHideFlags: 0
@@ -55317,6 +56019,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1807067918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807067919}
+  - component: {fileID: 1807067922}
+  - component: {fileID: 1807067921}
+  - component: {fileID: 1807067920}
+  m_Layer: 0
+  m_Name: tall_bush_1 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807067919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807067918}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 5.896, y: -2.4571, z: 8.857}
+  m_LocalScale: {x: 1.8308, y: 1.8308, z: 1.8308}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 609886893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807067920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807067918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!23 &1807067921
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807067918}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1807067922
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807067918}
+  m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
 --- !u!43 &1864510681
 Mesh:
   m_ObjectHideFlags: 0
@@ -55684,6 +56492,7 @@ GameObject:
   - component: {fileID: 1912695429}
   - component: {fileID: 1912695431}
   - component: {fileID: 1912695430}
+  - component: {fileID: 1912695432}
   m_Layer: 0
   m_Name: tall_bush_1 (2)
   m_TagString: Untagged
@@ -55700,7 +56509,7 @@ Transform:
   m_GameObject: {fileID: 1912695428}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.101, y: -1.883, z: 4.574}
+  m_LocalPosition: {x: 5.92, y: -1.883, z: 9.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55713,7 +56522,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912695428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -55762,6 +56571,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912695428}
   m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+--- !u!114 &1912695432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912695428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1001 &1928846019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56174,6 +56999,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1958415424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4914149171925772761, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+  m_PrefabInstance: {fileID: 609886892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1958415428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958415424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!1 &1967461988
 GameObject:
   m_ObjectHideFlags: 0
@@ -57185,6 +58031,112 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &2072983736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2072983737}
+  - component: {fileID: 2072983740}
+  - component: {fileID: 2072983739}
+  - component: {fileID: 2072983738}
+  m_Layer: 0
+  m_Name: tall_bush_1 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2072983737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072983736}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 8.234, y: -1.883, z: 10.049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 609886893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072983738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072983736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
+--- !u!23 &2072983739
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072983736}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0c332aa90b763cc48b259b78ca667465, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2072983740
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072983736}
+  m_Mesh: {fileID: -3367920490660733469, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
 --- !u!43 &2083876144
 Mesh:
   m_ObjectHideFlags: 0
@@ -59187,6 +60139,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -2.317, y: 96.252, z: -2.19}
+--- !u!1 &2099427299 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6368640651214525890, guid: 3148c71cd748cca48b5f38a4e6b9ad8f, type: 3}
+  m_PrefabInstance: {fileID: 609886892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099427303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099427299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc39f19ffdacee348a8beb50c1ea3357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlobalWindSway
+  windSpeed: 1.15
+  windScale: 13
+  windStrength: 0.12
+  individuality: 0.087
 --- !u!43 &2099481095
 Mesh:
   m_ObjectHideFlags: 0
