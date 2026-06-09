@@ -1,24 +1,24 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem; // <-- TOTO JE NOVÉ: Øíkáme Unity, a použije nový Input System
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false; // Statická promìnná, aby ostatní scripty vìdìly, jestli je pauza
+    public static bool GameIsPaused = false;
 
     [Header("UI Panels")]
     public GameObject pauseMenuUI;
 
     void Start()
     {
-        // Ujistíme se, že menu je na zaèátku vypnuté a hra bìží
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
     }
 
     void Update()
     {
-        // Detekce stisknutí klávesy ESC
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // <-- TOTO JE NOVÉ: Detekce ESC pøes nový Input System
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             if (GameIsPaused)
             {
@@ -34,10 +34,9 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f; // Vrátí èas do normálu
+        Time.timeScale = 1f;
         GameIsPaused = false;
 
-        // Zamkne a schová myš pro hraní (dùležité pro 3D hru)
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -45,21 +44,17 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f; // Zastaví èas (fyziku, animace atd.)
+        Time.timeScale = 0f;
         GameIsPaused = true;
 
-        // Odemkne a ukáže myš, abys mohl klikat na UI
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
     public void LoadMainMenu()
     {
-        // DÙLEŽITÉ: Pøed naètením menu musíme vrátit èas na 1, jinak by menu bylo "zamrzlé"
         Time.timeScale = 1f;
         GameIsPaused = false;
-
-        // Naète scénu s indexem 0 (což by mìlo být tvé Main Menu)
         SceneManager.LoadScene(0);
     }
 
