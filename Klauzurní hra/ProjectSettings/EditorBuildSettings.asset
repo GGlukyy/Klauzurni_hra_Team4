@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1 level Pokus scena.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/David.unity
     guid: b6757671450b5904aa692aa4ec16db29
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tim 3.lvl.unity
     guid: a0838b533b0e7c443b68af60cc4cf94a
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Luk\xE1\u0161.unity"
     guid: 4dbfd59ed246fa54eb8740cc9892405a
   m_configObjects:
